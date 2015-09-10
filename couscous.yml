@@ -1,0 +1,44 @@
+title: Introducción a la progamación
+
+subTitle: Lógica de programación
+
+baseUrl: http://ComPHPPuebla.github.io/easy-forms
+
+template:
+  url: https://github.com/CouscousPHP/Template-Dark
+
+menu:
+  sections:
+    main:
+      name: Introducción a la programación
+      items:
+        basics:
+          text: Conceptos básicos
+          relativeUrl: docs/basicos.html
+        primitives:
+          text: Entidades primitivas
+          relativeUrl: docs/entidades-primitivas.html
+        algorithms:
+          text: Lenguajes algorítmicos
+          relativeUrl: docs/lenguajes-algoritmicos.html
+        structured:
+          text: Programación estructurada
+          relativeUrl: docs/programacion-estructurada.html
+        sequential:
+          text: Estructuras secuenciales
+          relativeUrl: docs/estructuras-secuenciales.html
+        c:
+          text: Lenguaje C
+          relativeUrl: docs/lenguaje-c.html
+        conditionals:
+          text: Estructuras condicionales
+          relativeUrl: docs/estructuras-condicionales.html
+        loops:
+          text: Estructuras cíclicas
+          relativeUrl: docs/estructuras-ciclicas.html
+        arrays:
+          text: Arreglos
+          relativeUrl: docs/arreglos.html
+        subprograms:
+          text: Subprogramas
+          relativeUrl: docs/subprogramas.html
