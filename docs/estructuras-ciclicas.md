@@ -162,8 +162,8 @@ superior.
     categorías con base en la sig, tabla:
 
 2.  Al cerrar un expendio de naranjas, 15 clientes que aún no han pagado
-    recibirán un 15% de descuento si compran mas de 10 kilos. Determinar
-    cuanto pagara cada cliente y cuanto percibirá la tienda por esas
+    recibirán un 15% de descuento si compran más de 10 kilos. Determinar
+    cuanto pagará cada cliente y cuanto percibirá la tienda por esas
     compras.
 
 3.  En un centro de verificación de automóviles se desea saber el
