@@ -75,15 +75,3 @@ el algoritmo principal la debe llamar. Por ejemplo:
 
 2.  Diseñe un algoritmo que lea un numero y mediante una función regrese
     el valor de 1 si el numero es positivo y -1 si es negativo.
-
-[^1]: Antiguamente una memoria ROM no se podía reescribir, actualmente
-    contamos con memorias PROM (Reprogramables una sola vez), EPROM (ROM
-    Borrable y programable), EEPROM (ROM Borrable y programable
-    eléctricamente) y flash (EEPROM que permite borrar varias celdas en
-    una sola operación).
-
-[^2]: Mejor conocida como Ada Lovelace
-
-[^3]: Es de aclarar que los procedimientos y/o funciones son bloques de
-    instrucciones que forman el cuerpo de un programa y que se
-    analizarán a profundidad en el Cap’itulo 5.
