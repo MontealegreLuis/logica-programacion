@@ -9,7 +9,7 @@ introducir las características de la programación estructurada.
 El comienzo de la historia de los lenguajes de programación data de mediados del
 siglo XIX. Charles Babbage diseñó entre 1833 y 1842 la "máquina analítica", la
 cual se considera como la primera computadora del mundo, pues pretendía realizar
-cualquier tipo de cálculo. 
+cualquier tipo de cálculo.
 
 Desafortunadamente Babbage no pudo construirla por razones políticas y
 financieras pero claro que era posible crear un programa que se ejecutara en
