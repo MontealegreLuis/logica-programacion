@@ -12,6 +12,9 @@ menu:
     main:
       name: Introducción a la programación
       items:
+        intro:
+          text: Introducción
+          relativeUrl: docs/introduccion.html
         basics:
           text: Conceptos básicos
           relativeUrl: docs/basicos.html
