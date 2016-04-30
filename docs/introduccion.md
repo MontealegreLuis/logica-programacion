@@ -1,10 +1,8 @@
 #Introducción
 
-La programación es un área de conocimiento fundamental para las licenciaturas
-y/o ingenierías en Sistemas Computacionales y/o Ciencias de la Computación. En
-estas notas he recopilado la información que considero necesaria para la
-formación básica de los estudiantes del área, haciendo hincapié en el desarrollo
-de la **lógica de programación**, y en el hábito de conocer y seguir un **estilo
+Estas notas contienen la información que considero necesaria para la
+formación básica  en el área de programación, su objetivo es desarrollar
+la **lógica de programación**, e introducir el concepto de **estilo
 de codificación**.
 
 Este documento está organizado de la siguiente manera:
