@@ -1,7 +1,7 @@
 # Conceptos Básicos y Metodología
 
-En este capítulo aprenderás los conceptos básicos que necesitas aprender antes
-de escribir tus primeros programas:
+En este capítulo aprenderás los conceptos básicos necesarios para escribir tus
+primeros programas:
 
 * Flujo de datos en una Computadora
 * Programa
@@ -27,8 +27,7 @@ Computadora
 
 :   Es un dispositivo electrónico usado para procesar información y obtener
     resultados. A los datos que recibe la computadora, se les llama
-    **entradas** (**input**), estos datos se **procesan** para producir una
-    **salida** (**output**).
+    **entradas**, estos datos se **procesan** para producir una **salida**.
 
     ![Flujo de información](images/flujo-informacion.png)
 
@@ -59,10 +58,10 @@ los siguientes:
 
 1.  Preguntar cuales son esos dos números.
 2.  Sumar los dos números obtenidos en el paso 1.
-3.  Comunicar el resultado.
+3.  Comunicar el resultado obtenido en el paso 2.
 
-Por otro lado, si usáramos un algoritmo cualitativo tendríamos que usar
-**fórmulas** como las siguientes:
+Por otro lado, si usas un algoritmo cualitativo tendrías que usar **fórmulas**
+como las siguientes:
 
 1.  Sean `A` y `B` dos variables con los valores que queremos sumar.
 2.  Sea `C = A + B`.
@@ -89,14 +88,18 @@ Los algoritmos no pueden ser interpretados por una computadora directamente,
 así que debemos **traducirlos** a un lenguaje que la computadora pueda
 entender. Ese es el objetivo de un lenguaje de programación.
 
-Un lenguaje de programación es un conjunto de símbolos, caracteres y reglas
+Un lenguaje de programación es el conjunto de símbolos, caracteres y reglas
 que le permiten a las personas **comunicarse** con la computadora. Los
 lenguajes de programación tienen un conjunto de instrucciones que permiten
-realizar operaciones de **entrada/salida**, **aritméticas**, de
-**manipulación de texto**, **lógica y comparación** y
-**almacenamiento y recuperación**.
+realizar operaciones de:
 
-## Metodología para la Solución de Problemas por Computadora
+* **entrada/salida**,
+* **aritméticas**,
+* de **manipulación de texto**,
+* **lógica** y **comparación** y
+* **almacenamiento** y **recuperación** de datos.
+
+## Metodología para la creación de programas.
 
 Una metodología define una manera sistemática de hacer algo. En nuestro caso,
 describe los pasos a seguir al crear programas.
@@ -159,7 +162,7 @@ producir los resultados esperados.
 Las características de un buen algoritmo son:
 
 -   Debe tener un punto particular de inicio.
--   Debe ser claro, no debe permitir dobles interpretaciones.
+-   No debe permitir dobles interpretaciones.
 -   Debe ser general, es decir, debe soportar la mayoría de las variantes que se
     puedan presentar en la definición del problema.
 -   Debe ser finito en tamaño y tiempo de ejecución.
@@ -173,7 +176,7 @@ programación), a la cual se le conoce como **código fuente**.
 ### 5) Prueba y Depuración
 
 Los errores humanos dentro de la programación de computadoras son muchos y
-aumentan considerablemente con la complejidad del problema. El proceso de
+aumentan considerablemente con la complejidad del problema. Al proceso de
 **identificar y eliminar errores** se le llama depuración.
 
 ## Ejercicios Propuestos
