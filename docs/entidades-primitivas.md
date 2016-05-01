@@ -1,46 +1,52 @@
 # Entidades Primitivas
 
-En este capítulo se explican los elementos que permiten diseñar algoritmos, como
-son: los tipos de datos, las constantes, las variables y las expresiones.
+En este capítulo aprenderás sobre los elementos necesarios par diseñar
+algoritmos, como son:
+
+* los **tipos de datos**,
+* las **constantes**,
+* las **variables**
+* y las **expresiones**.
 
 ## Tipos de Datos
 
-Todos los datos en un algoritmo o programa tienen un tipo asociado con ellos. Un
-dato puede ser un simple carácter, tal como `b`, un valor entero tal como `35`.
-El tipo de dato determina la naturaleza del conjunto de valores que puede tomar.
-La siguiente Figura muestra la clasificación general de los tipos de datos de
-acuerdo a su complejidad.
+Todos los datos en un algoritmo o programa tienen un tipo asociado con ellos.
+Un dato puede ser un simple caracter, tal como `b`, o un valor entero tal como
+`35`.
+
+El tipo determina el **conjunto de valores que puede tomar un dato** y el
+**tipo de operaciones** que se le pueden aplicar. La siguiente Figura muestra
+la clasificación general de los tipos de datos de acuerdo a su complejidad.
 
 ![Tipos de datos](images/tipos-de-datos.png)
 
-Los tipos de datos estructurados se analizan en capítulos posteriores, este
-Capítulo se enfoca en describir los tipos de datos simples.
+Algunos tipos de datos estructurados se analizarán en capítulos posteriores,
+este Capítulo se enfoca en describir los tipos de datos simples.
 
 ### Tipos de Datos Simples
 
 A continuación se detalla el tipo de contenido que corresponde a los tipos de
 datos simples.
 
--   **Datos Numéricos**. Permiten representar valores escalares de forma
-    numérica, esto incluye a los números **enteros** y los **reales**. Con este
-    tipo de datos se pueden realizar las operaciones aritméticas comunes.
--   **Datos Alfanuméricos (String)**. Estos datos son una secuencia de
-    caracteres alfanuméricos que permiten representar valores identificables de
-    forma descriptiva, esto incluye nombres de personas, direcciones, etc. Es
-    posible representar números como alfanuméricos, pero éstos pierden sus
-    propiedades matemáticas, es decir, no es posible hacer operaciones
-    aritméticas con datos alfanuméricos. Este tipo de datos se representan
-    encerrados entre comillas. Por ejemplo: `"Instituto tecnológico de Puebla"`,
-    `"1997"`.
--   **Datos Lógicos**. Son aquellos que sólo pueden tener dos valores (cierto o
-    falso) ya que representan el resultado de una comparación entre otros datos
-    (numéricos o alfanuméricos).
+-   **Datos Numéricos**. Permiten representar valores de forma numérica, esto
+    incluye a los números **enteros** y los **reales**. Con este tipo de
+    datos se pueden realizar las **operaciones aritméticas comunes**.
+-   **Datos Alfanuméricos (Cadenas)**. Estos datos son una secuencia de
+    caracteres alfanuméricos, en otras palabras **texto**. Esto incluye
+    nombres de personas, direcciones, etc. Es posible representar números como
+    alfanuméricos, pero éstos pierden sus propiedades matemáticas, es decir, no
+    es posible hacer operaciones aritméticas con datos alfanuméricos. Este
+    tipo de datos se representan encerrados entre comillas. Por ejemplo:
+    `"Grupo de Usuarios PHP Puebla"`, `"1997"`.
+-   **Datos Lógicos**. Son aquellos que sólo pueden tener dos valores:
+    **cierto** o **falso** ya que representan el resultado de una
+    **comparación** entre otros datos (numéricos o alfanuméricos).
 
 ## Identificadores
 
 Los identificadores representan los datos de un programa. Un identificador es
-una **secuencia de caracteres que sirve para identificar una posición en la
-memoria de la computadora**, el cual nos permite accesar a su contenido.
+una **secuencia de caracteres que sirve para identificar un dato en la
+computadora**.
 
 Ejemplos: `nombre`, `numeroDeHoras`, `calificacion2`
 
@@ -53,8 +59,8 @@ son las siguientes:
 -   Deben comenzar con una letra (A a Z, mayúsculas o minúsculas) y no deben
     contener espacios en blanco.
 
--   Letras, dígitos y caracteres como el guión bajo (`_`) están permitidos
-    después del primer carácter.
+-   Letras, dígitos y el guión bajo (`_`) están permitidos después del primer
+    caracter.
 
 ## Constantes y Variables
 
@@ -85,21 +91,18 @@ Las variables son : `diametro` y `perimetro`, la constante es `PI`.
 
 ### Notación para Variables y Constantes
 
-Dentro de las buenas prácticas de programación encontramos la del nombrado
-estándar de variables y constantes. Existen varias "formas estándar" de nombrar
-variables y constantes, a las cuales se les conoce como notaciones. 
+Existen varias **formas estándar** de nombrar variables y constantes, a las
+cuales se les conoce como **notaciones**. 
 
 En estas notas se utiliza la notación `CamelCase`. La notación *Camel*
 consiste en escribir los identificadores con la primera letra de cada palabra en
 mayúsculas y el resto en minúsculas, por ejemplo: `EndOfFile`. Se le llama
 notación "Camel" porque los identificadores recuerdan las jorobas de un camello.
+
 Existen dos variantes de la notación:
 
 -   `UpperCamelCase`: en esta variante la primera letra también es mayúscula.
 -   `lowerCamelCase`: en esta variante la primera letra es minúscula.
-
-En este documento se opta por utilizar la notación **lowerCamelCase** para los
-identificadores de variables.
 
 En muchos lenguajes de programación, se tiene la costumbre de denotar las
 constantes mediante identificadores en mayúsculas. En este caso la notación
@@ -109,9 +112,9 @@ Camel no es aplicable y solo queda usar la notación **C**, por ejemplo:
 ### Clasificación de las Variables
 
 Las variables se clasifican por su contenido en: **numéricas**, **lógicas** y 
-**alfanuméricas** (string); y por su uso en: **variables de trabajo**,
-**contadores** y **acumuladores**. La siguiente Figura muestra gráficamente esta
-clasificación.
+**alfanuméricas** (cadenas); y por su uso en: **variables de trabajo**,
+**contadores** y **acumuladores**. La siguiente Figura muestra gráficamente
+esta clasificación.
 
 ![Tipos de variables](images/tipos-variables.png)
 
@@ -120,13 +123,13 @@ clasificación.
 -   **Variable Numéricas.** Son aquellas en las cuales se almacenan valores
     numéricos, positivos o negativos, es decir almacenan secuencias de dígitos
     (números del 0 al 9), signos (+ y -) y el punto decimal. Ejemplo: 
-    `iva = 0.15`, `salario = 3500.85`, `costo = 2500`.
+    `salario = 3500.85`, `costo = 2500`, `temperatura = -2`.
 -   **Variables Lógicas.** Son aquellas que sólo pueden tener dos valores:
-    verdadero o falso (V ó F), éstos representan el resultado de una comparación
-    entre otros datos (operación relacional).
--   **Variables Alfanuméricas.** Variables formadas por caracteres alfanuméricos
-    (letras, números y caracteres especiales). Por ejemplo: `letra = 'a'` 
-    `apellido = "López"`, `direccion = "Av. Libertad  #190"`.
+    verdadero o falso (`V` ó `F`), éstos representan el resultado de una
+    comparación entre otros datos (operación relacional).
+-   **Variables Alfanuméricas.** Variables formadas por caracteres
+    alfanuméricos (letras, números y caracteres especiales). Por ejemplo:
+    `letra = 'a'`, `apellido = "López"`, `direccion = "Av. Libertad  #190"`.
 
 #### Por su uso
 
