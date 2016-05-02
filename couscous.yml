@@ -21,6 +21,9 @@ menu:
         primitives:
           text: Entidades primitivas
           relativeUrl: docs/entidades-primitivas.html
+        expressions:
+          text: Expresiones
+          relativeUrl: docs/expresiones.html
         algorithms:
           text: Lenguajes algorítmicos
           relativeUrl: docs/lenguajes-algoritmicos.html
