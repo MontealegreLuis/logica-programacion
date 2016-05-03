@@ -76,7 +76,7 @@ Constante
 Variable
 
 :   Es es un valor numérico o alfanumérico cuyo contenido puede **cambiar**
-    durante la ejecución del programa.
+    durante la ejecución de un programa o algoritmo.
 
     Por ejemplo:
 

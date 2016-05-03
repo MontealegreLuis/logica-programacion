@@ -5,6 +5,7 @@ operaciones válidas que se pueden realizar con ellos. Los conceptos a revisar
 son:
 
 * **expresiones**,
+* **concatenación**,
 * operaciones **aritméticas**,
 * operaciones **relacionales**,
 * operaciones **lógicas**,
@@ -13,46 +14,57 @@ son:
 ## Tipos de expresiones
 
 Las expresiones son combinaciones de constantes, variables, símbolos de
-operación, paréntesis y nombres de funciones especiales. Por ejemplo:
+operación, y paréntesis. Por ejemplo:
 `a + (b + 3) / c`.
 
-Cada expresión toma un valor que se determina tomando los valores de las
-variables y constantes implicadas y la ejecución de las operaciones indicadas.
+Cada expresión resulta en un valor que se determina al evaluar las operaciones
+indicadas usando los valores de las variables y constantes implicadas.
 
-Una expresión consta de operadores y operandos. Según sea el tipo de datos que
-manipulan, las expresiones se clasifican en:
+Una expresión consta de **operadores y operandos**. Según sea el tipo de
+datos que manipulan, las expresiones se clasifican en:
 
--   Aritméticas
--   Relacionales
--   Lógicas
+- Aritméticas
+- Relacionales
+- Lógicas y
+- De concatenación
 
 ## Operadores y Operandos
 
 Los operadores son elementos que relacionan de forma diferente, los valores de
 una o mas variables y/o constantes. Es decir, los operadores nos permiten
-manipular valores y se dividen en tres grupos como se muestra en la siguiente
+manipular valores y se dividen en cuatro grupos como se muestra en la siguiente
 Figura:
 
 ![Tipos de operadores](images/tipos-operadores.png)
 
+### Concatenación
+
+Una operación de concatenación involucra dos o mas valores alafanuméricos o
+cadenas, cuyo contenido se va agregando al resultado final, evaluando de
+izquierda a derecha. Generalmente representamos esta operación con el operador
+`+`, aunque algunos lenguajes de programación usan un símbolo diferente. Por
+ejemplo:
+
+`"Hola " + "mundo"` dará como resultado `"Hola mundo"`
+
 ### Operadores Aritméticos
 
-Los operadores aritméticos permiten realizar de operaciones matemáticas sobre
-valores (variables y constantes). La forma general que tiene una operación
-aritmética que opera sobre dos valores se ilustra en la siguiente Figura:
+La forma general que tiene una operación aritmética que opera sobre dos valores
+se ilustra en la siguiente Figura:
 
 ![Sintaxis de operadores](images/sintaxis-operadores.png)
 
-Los operadores aritméticos pueden ser utilizados con tipos de datos enteros o
-reales. Si ambos son **enteros**, el resultado es **entero**; si alguno de ellos
+Los operadores aritméticos son válidos para tipos de datos enteros o reales.
+Si ambos son **enteros**, el resultado es **entero**; si alguno de ellos
 es **real**, el resultado es **real**. Las operaciones aritméticas son las
 siguientes:
 
--   Suma: `+`
--   Resta: `-`
--   Multiplicación: `*`
--   División: `/`
--   Módulo (residuo de la división entera): `%`
+- Suma: `+`
+- Resta: `-`
+- Multiplicación: `*`
+- División: `/`
+- Módulo (residuo de la división entera): `%`
+- Exponenciación: `^`
 
 Ejemplos:
 
@@ -61,6 +73,7 @@ Ejemplos:
 | `7 / 2`      | `3.5`     |
 | `12 % 7`     | `5`       |
 | `4  + 2 * 5` | `14`      |
+| `3 ^ 2`     | `9`      |
 
 #### Prioridad de los Operadores Aritméticos
 
@@ -99,9 +112,9 @@ Los operadores relacionales se utilizan para establecer una relación entre dos
 valores. Los valores se comparan entre sí y esta comparación produce un
 resultado de certeza o falsedad (verdadero o falso).
 
-Los operadores relacionales deben comparan valores del mismo tipo (numéricos o
-cadenas), tienen el mismo nivel de prioridad en su evaluación y tienen menor
-prioridad que los operadores aritméticos.
+Los operadores relacionales deben comparan **valores del mismo tipo**
+(numéricos o cadenas), tienen el mismo nivel de prioridad en su evaluación y
+tienen menor prioridad que los operadores aritméticos.
 
 Las operaciones relacionales son las siguientes:
 
@@ -114,7 +127,7 @@ Las operaciones relacionales son las siguientes:
 
 #### Ejemplos
 
-Si a = 10, b = 20 y c = 30.
+Si `a = 10`, `b = 20` y `c = 30`.
 
 `a + b > c`
 
@@ -142,14 +155,14 @@ Ejemplos no válidos:
 
 ### Operadores Lógicos
 
-Los operadores lógicos se utilizan para establecer relaciones entre valores
-lógicos. Estos valores pueden ser resultado de una expresión relacional.
+Los operadores lógicos se utilizan para establecer relaciones entre **valores
+lógicos**. Estos valores pueden ser resultado de una expresión relacional.
 
 Las operaciones lógicas son las siguientes:
 
--   Conjunción: **And**, `&`
+-   Conjunción: **AND**, `&`
 -   Disyunción: **OR**, `|`
--   Negación: **Not**, `!`
+-   Negación: **NOT**, `!`
 
 A continuación se muestran las tablas de verdad para las operaciones lógicas.
 
@@ -174,17 +187,15 @@ Ejemplos: Sea `a = 10`, `b = 20` y `c = 30`.
  a < b  & b  < c
 10 < 20 & 20 < 30
    V    &    V
-        V
+       V
 ```
 
 #### Prioridad de los Operadores Lógicos
 
-Los operadores relacionales se evaluán en el siguiente orden.
+Los operadores relacionales se evalúan en el siguiente orden.
 
 -   Not `!`
-
 -   And `&`
-
 -   OR `|`
 
 #### Prioridad de los Operadores en General
