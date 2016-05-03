@@ -6,6 +6,7 @@ baseUrl: http://www.montealegreluis.com/logica-programacion
 
 template:
   url: https://github.com/CouscousPHP/Template-Dark
+  index: introduccion.md
 
 menu:
   sections:
