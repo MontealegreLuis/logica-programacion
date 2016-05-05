@@ -1,5 +1,13 @@
 # Estructuras Secuenciales
 
+En este capítulo aprenderás a distinguir y usar 3 estructuras secuenciales:
+
+* la **asignación**,
+* la **lectura** o **entrada** de datos,
+* la **salida** de datos.
+
+## Definicion
+
 La estructura secuencial es aquella en la que una acción (instrucción) sigue a
 otra en secuencia. Las tareas se suceden de tal modo que la salida de una es la
 entrada de la siguiente y así sucesivamente hasta el fin del proceso. Una
@@ -15,22 +23,22 @@ accion n
 
 ## Asignación
 
-La asignación consiste, en el paso de valores o resultados a una zona de la
-memoria. Dicha zona será reconocida con el nombre de la variable que recibe el
-valor. La asignación se puede clasificar de la siguiente forma:
+La asignación consiste, en el paso de valores o resultados a una variable. Las
+asignaciones se pueden clasificar de la siguiente forma:
 
--   **Simples** Consiste en pasar un valor constate a una variable (`a = 15`)
--   **De trabajo** Donde puede recibir el resultado de una operación matemática
-    que involucre muchas variables (`a = c + b * 2 / 4`).
--   **Contador** Consiste en usarla como un verificador del número de veces que
+-   **Simples** Consiste en pasar un valor constante a una variable (`a = 15`)
+-   **De trabajo** Donde se recibe el resultado de una operación que
+    involucra varias variables o valores (`a = c + b * 2 / 4`).
+-   **Contador** Consiste en usar una variable para contar el número de veces que
     se realiza un proceso (`a = a + 1`)
--   **Acumulador** Consiste en usarla como un sumador en un proceso
-    (`a = a + b`).
+-   **Acumulador** Consiste en usar una variable para acumular un valor en un
+    proceso que se puede repetir varias veces (`a = a + b`).
 
 ## Lectura
 
-La lectura consiste en recibir desde un dispositivo de entrada (por ejemplo, el
-teclado) un valor. Esta operación se representa en un pseudo código como sigue:
+La lectura consiste en recibir desde un dispositivo de entrada (generalmente, el
+teclado y el mouse) un valor. Esta operación se representa en un pseudo código
+como sigue:
 
 ```
 leer valor
@@ -40,9 +48,8 @@ Donde `valor` es el nombre de la variable que recibirá el valor.
 
 ## Escritura
 
-Consiste en mandar por un dispositivo de salida (por ejemplo, el monitor o la
-impresora) un resultado o mensaje. Este proceso se representa en un pseudocódigo
-como sigue:
+Consiste en mandar por un dispositivo de salida (generalmente, el monitor) un
+resultado o mensaje. Este proceso se representa en un pseudocódigo como sigue:
 
 ```
 escribir "El resultado es:", resultado
