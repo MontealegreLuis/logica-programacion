@@ -22,13 +22,13 @@ resaltando la programación estructurada.
 * En el [Capítulo 6](estructuras-secuenciales.html) se explican tres
 tipos de estructuras secuenciales: la asignación, y la entrada y salida estándar
 de datos.
-* En el [Capítulo 7](lenguaje-c.html) se introduce el lenguaje de
-programación C, así como al estilo de programación que se sigue en estas notas.
-* El [Capítulo 8](estructuras-condicionales.html) explica tres tipos de
+* El [Capítulo 7](estructuras-condicionales.html) explica tres tipos de
 estructura condicionales: la simple, la múltiple  y la de selección.
-* El [Capítulo 9](estructuras-ciclicas.html) explica tres tipos de
+* El [Capítulo 8](estructuras-ciclicas.html) explica tres tipos de
 estructuras cíclicas: el ciclo `for`, el ciclo `while` y el ciclo `do-while`.
-* El [Capítulo 10](arreglos.html) trata de los tipos de arreglos más
+* El [Capítulo 9](arreglos.html) trata de los tipos de arreglos más
 comunes el vector y la matriz.
-* Por último el [Capítulo 11](subprogramas.html) introduce el concepto de
+* Por último el [Capítulo 10](subprogramas.html) introduce el concepto de
 subprograma.
+* En el [Capítulo 11](lenguaje-c.html) se introduce el lenguaje de
+programación C, así como al estilo de programación que se sigue en estas notas.

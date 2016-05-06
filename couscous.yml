@@ -34,9 +34,6 @@ menu:
         sequential:
           text: Estructuras secuenciales
           relativeUrl: docs/estructuras-secuenciales.html
-        c:
-          text: Lenguaje C
-          relativeUrl: docs/lenguaje-c.html
         conditionals:
           text: Estructuras condicionales
           relativeUrl: docs/estructuras-condicionales.html
@@ -49,3 +46,6 @@ menu:
         subprograms:
           text: Subprogramas
           relativeUrl: docs/subprogramas.html
+        c:
+          text: Lenguaje C
+          relativeUrl: docs/lenguaje-c.html
