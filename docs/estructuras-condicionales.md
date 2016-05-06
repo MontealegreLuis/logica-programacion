@@ -1,15 +1,18 @@
 # Estructuras Condicionales
 
-Las estructuras condicionales comparan una variable contra otro(s) valor(es),
-para que en base al resultado de esta comparación, se siga un curso de acción
-dentro del programa. Cabe mencionar que la comparación se puede hacer contra
-otra variable o contra una constante, según se necesite. Existen dos tipos
-básicos, las simples y las múltiples.
+Las estructuras condicionales comparan dos valores, para que en base al
+resultado de esta comparación, se siga un curso de acción dentro de un programa.
+Cabe mencionar que la comparación se puede hacer entre variables o constantes,
+según se necesite. En este capitulo aprenderas a usar y distinguir los dos tipos
+básicos:
+
+* las **simples**
+* y las **múltiples**.
 
 ## Estructuras Condicionales Simples
 
-Dentro del grupo de estructuras simples existe una subdivisón que implica dos
-tipos de condicionales las **sencillas** y las **dobles**.
+Dentro del grupo de estructuras simples, existe una subdivisón, la cual incluye
+las condicionales **sencillas** y las **dobles**.
 
 ### Condicionales Sencillas
 
@@ -26,8 +29,7 @@ fin-si
 #### Condicionales Dobles
 
 Las estructuras condicionales dobles permiten elegir entre dos opciones o
-alternativas posibles en función del cumplimiento o no de una determinada
-condición. Se representan de la siguiente forma:
+alternativas posibles y se representan de la siguiente forma:
 
 ```
 si <condicion> entonces
@@ -357,10 +359,9 @@ acciones.
 
 ## Condicionales Múltiples
 
-Las estructuras de comparación múltiples, son tomas de decisión especializadas
-que permiten comparar una variable contra distintos posibles resultados,
-ejecutando para cada caso una serie de instrucciones específicas. La forma común
-es la siguiente:
+Las estructuras de comparación múltiples, permiten comparar valores contra
+distintos posibles resultados, ejecutando para cada caso una serie de
+instrucciones específicas. La forma común es la siguiente:
 
 ```
 si <condicion1> entonces
