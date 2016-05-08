@@ -1,3 +1,7 @@
+---
+currentMenu: sequential
+---
+
 # Estructuras Secuenciales
 
 En este capítulo aprenderás a distinguir y usar 3 estructuras secuenciales:

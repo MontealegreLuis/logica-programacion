@@ -1,3 +1,7 @@
+---
+currentMenu: conditionals
+---
+
 # Estructuras Condicionales
 
 Las estructuras condicionales comparan dos valores, para que en base al

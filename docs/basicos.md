@@ -1,3 +1,7 @@
+---
+currentMenu: basics
+---
+
 # Conceptos Básicos y Metodología
 
 En este capítulo aprenderás los conceptos básicos necesarios para escribir tus

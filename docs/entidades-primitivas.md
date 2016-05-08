@@ -1,3 +1,7 @@
+---
+currentMenu: primitives
+---
+
 # Entidades Primitivas
 
 En este capítulo aprenderás sobre los elementos básicos para diseñar algoritmos,

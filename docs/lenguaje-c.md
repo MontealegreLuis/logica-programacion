@@ -1,3 +1,7 @@
+---
+currentMenu: c
+---
+
 # El lenguaje de programación C
 
 EL lenguaje C es el resultado de un proceso de desarrollo que inició con un

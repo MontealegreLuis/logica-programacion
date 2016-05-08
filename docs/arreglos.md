@@ -1,3 +1,7 @@
+---
+currentMenu: arrays
+---
+
 # Arreglos
 
 Un Arreglo es una estructura de datos que almacena bajo el mismo nombre

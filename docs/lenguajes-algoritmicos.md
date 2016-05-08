@@ -1,3 +1,7 @@
+---
+currentMenu: algorithms
+---
+
 # Lenguajes Algorítmicos
 
 En el [capítulo 2](docs/entidades-primitivas.html) describimos qué es un

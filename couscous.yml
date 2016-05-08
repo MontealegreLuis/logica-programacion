@@ -6,6 +6,10 @@ template:
   directory: website
   index: introduccion.md
 
+github:
+  user: MontealegreLuis
+  repo: logica-programacion
+
 menu:
   items:
     basics:

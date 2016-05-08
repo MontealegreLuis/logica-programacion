@@ -1,3 +1,7 @@
+---
+currentMenu: structured
+---
+
 # Programación Estructurada
 
 En este Capítulo se describen los diferentes paradigmas de programación que

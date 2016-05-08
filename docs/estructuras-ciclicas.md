@@ -1,3 +1,7 @@
+---
+currentMenu: loops
+---
+
 # Estructuras Cíclicas
 
 Se llaman problemas repetitivos o cíclicos a aquellos en cuya solución es
