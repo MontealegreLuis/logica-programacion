@@ -1,51 +1,43 @@
-title: Introducción a la progamación
-
-subTitle: Lógica de programación
+title: Lógica de programación
 
 baseUrl: http://www.montealegreluis.com/logica-programacion
 
 template:
-  url: https://github.com/CouscousPHP/Template-Dark
+  directory: website
   index: introduccion.md
 
 menu:
-  sections:
-    main:
-      name: Introducción a la programación
-      items:
-        intro:
-          text: Introducción
-          relativeUrl: docs/introduccion.html
-        basics:
-          text: Conceptos básicos
-          relativeUrl: docs/basicos.html
-        primitives:
-          text: Entidades primitivas
-          relativeUrl: docs/entidades-primitivas.html
-        expressions:
-          text: Expresiones
-          relativeUrl: docs/expresiones.html
-        algorithms:
-          text: Lenguajes algorítmicos
-          relativeUrl: docs/lenguajes-algoritmicos.html
-        structured:
-          text: Programación estructurada
-          relativeUrl: docs/programacion-estructurada.html
-        sequential:
-          text: Estructuras secuenciales
-          relativeUrl: docs/estructuras-secuenciales.html
-        conditionals:
-          text: Estructuras condicionales
-          relativeUrl: docs/estructuras-condicionales.html
-        loops:
-          text: Estructuras cíclicas
-          relativeUrl: docs/estructuras-ciclicas.html
-        arrays:
-          text: Arreglos
-          relativeUrl: docs/arreglos.html
-        subprograms:
-          text: Subprogramas
-          relativeUrl: docs/subprogramas.html
-        c:
-          text: Lenguaje C
-          relativeUrl: docs/lenguaje-c.html
+  items:
+    basics:
+      text: Conceptos básicos
+      relativeUrl: docs/basicos.html
+    primitives:
+      text: Entidades primitivas
+      relativeUrl: docs/entidades-primitivas.html
+    expressions:
+      text: Expresiones
+      relativeUrl: docs/expresiones.html
+    algorithms:
+      text: Lenguajes algorítmicos
+      relativeUrl: docs/lenguajes-algoritmicos.html
+    structured:
+      text: Programación estructurada
+      relativeUrl: docs/programacion-estructurada.html
+    sequential:
+      text: Estructuras secuenciales
+      relativeUrl: docs/estructuras-secuenciales.html
+    conditionals:
+      text: Estructuras condicionales
+      relativeUrl: docs/estructuras-condicionales.html
+    loops:
+      text: Estructuras cíclicas
+      relativeUrl: docs/estructuras-ciclicas.html
+    arrays:
+      text: Arreglos
+      relativeUrl: docs/arreglos.html
+    subprograms:
+      text: Subprogramas
+      relativeUrl: docs/subprogramas.html
+    c:
+      text: Lenguaje C
+      relativeUrl: docs/lenguaje-c.html
