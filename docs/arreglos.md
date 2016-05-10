@@ -4,13 +4,20 @@ currentMenu: arrays
 
 # Arreglos
 
-Un Arreglo es una estructura de datos que almacena bajo el mismo nombre
-(variable) a una colección de datos del mismo tipo.
+En este capitulo aprenderas a usar los dos tipos de arreglos mas comunes
+
+* **Unidimensionales** y
+* **Bidimensionales**
+
+## Clasificacion
+
+Un Arreglo es una **estructura de datos** que almacena bajo el mismo nombre
+(variable) a una **colección de datos del mismo tipo**.
 
 Los arreglos se caracterizan por:
 
--   Almacenan los elementos en posiciones contiguas de memoria
--   Tienen un mismo nombre de variable que representa a todos los elementos.
+-   Almacenar los elementos en posiciones contiguas de memoria
+-   Tener un mismo nombre de variable que representa a todos los elementos.
 -   Para hacer referencia a esos elementos es necesario utilizar un índice que
     especifica el lugar que ocupa cada elemento dentro del arreglo.
 
