@@ -4,12 +4,21 @@ currentMenu: loops
 
 # Estructuras Cíclicas
 
+En este capítulo aprenderas a utilizar los 3 tipos de ciclos mas comunes:
+
+* Ciclo `hacer-para`
+* Ciclo `hacer-mientras`
+* Ciclo `repetir-hasta`
+
+## Clasificación
+
 Se llaman problemas repetitivos o cíclicos a aquellos en cuya solución es
 necesario utilizar un mismo conjunto de acciones que se puedan ejecutar una
-cantidad especifica de veces. Esta cantidad puede ser fija (previamente
-determinada por el programador) o puede ser variable (estar en función de algún
-dato dentro del programa).Los ciclos se clasifican como lo ilustra la siguiente
-figura:
+cantidad especifica de veces.
+
+Esta cantidad puede ser **fija** (previamente determinada por el programador)
+o puede ser **variable** (estar en función de algún dato dentro del programa).
+Los ciclos se clasifican como lo ilustra la siguiente figura:
 
 ![Tipos de ciclos](images/tipos-ciclos.png)
 
@@ -33,8 +42,8 @@ Fin-para
 
 Donde:
 
--   `variableControl` es la variable de control del ciclo, la cual nos permite
-    llevar la cuenta de cuantas iteraciones se han realizado en todo momento.
+-   `variableControl` lleva la cuenta de cuantas iteraciones se han realizado
+    en todo momento.
 -   `valorInicial` es el valor desde donde empezará a contar la variable de
     control.
 -   `limite` es el valor que necesita alcanzar la variable de control para
