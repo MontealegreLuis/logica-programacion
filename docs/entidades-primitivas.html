@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lógica de programación</title>
+
+    <link rel="icon" type="image/png" href="http://www.montealegreluis.com/logica-programacion/favicon.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/highlight.dark.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/main.css">
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+
+    <a class="navbar-brand" href="http://www.montealegreluis.com/logica-programacion/">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Lógica de programación
+        <small class="hidden-xs hidden-sm">
+            
+        </small>
+    </a>
+
+            <a href="https://github.com/MontealegreLuis/logica-programacion">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
+</header>
+
+
+<main class="container-fluid">
+
+    
+        <nav id="sidebar" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/basicos.html">
+                            Conceptos básicos
+                        </a>
+                    </li>
+                                    <li class="active">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/entidades-primitivas.html">
+                            Entidades primitivas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/expresiones.html">
+                            Expresiones
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguajes-algoritmicos.html">
+                            Lenguajes algorítmicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/programacion-estructurada.html">
+                            Programación estructurada
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-secuenciales.html">
+                            Estructuras secuenciales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-condicionales.html">
+                            Estructuras condicionales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-ciclicas.html">
+                            Estructuras cíclicas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/arreglos.html">
+                            Arreglos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/subprogramas.html">
+                            Subprogramas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguaje-c.html">
+                            Lenguaje C
+                        </a>
+                    </li>
+                            </ul>
+
+        </nav>
+
+    
+    <div class="row">
+
+        <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+            <h1 id="entidades-primitivas">Entidades Primitivas</h1>
+<p>En este capítulo aprenderás sobre los elementos básicos para diseñar algoritmos,
+como son:</p>
+<ul>
+<li>los <strong>tipos de datos</strong>,</li>
+<li>los <strong>identificadores</strong>,</li>
+<li>las <strong>constantes</strong>,</li>
+<li>las <strong>variables</strong></li>
+<li>y las <strong>expresiones</strong>.</li>
+</ul>
+<h2 id="tipos-de-datos">Tipos de Datos</h2>
+<p>Todos los datos en un algoritmo o programa tienen un tipo asociado con ellos.
+Un dato puede ser un simple caracter, tal como <code>b</code>, o un valor entero tal como
+<code>35</code>.</p>
+<p>El tipo determina el <strong>conjunto de valores que puede tomar un dato</strong> y el
+<strong>tipo de operaciones</strong> que se le pueden aplicar. La siguiente Figura muestra
+la clasificación general de los tipos de datos de acuerdo a su complejidad.</p>
+<p><img src="images/tipos-de-datos.png" alt="Tipos de datos" /></p>
+<p>Algunos tipos de datos estructurados se analizarán en capítulos posteriores,
+este Capítulo se enfoca en describir los tipos de datos simples.</p>
+<h3 id="tipos-de-datos-simples">Tipos de Datos Simples</h3>
+<p>A continuación se detalla el tipo de contenido que corresponde a los tipos de
+datos simples.</p>
+<ul>
+<li><strong>Datos Numéricos</strong>. Permiten representar valores de forma numérica, esto
+incluye a los números <strong>enteros</strong> y los <strong>reales</strong>. Con este tipo de
+datos se pueden realizar las <strong>operaciones aritméticas comunes</strong>.</li>
+<li><strong>Datos Alfanuméricos (Cadenas)</strong>. Estos datos son una secuencia de
+caracteres alfanuméricos, en otras palabras <strong>texto</strong>. Esto incluye
+nombres de personas, direcciones, etc. Es posible representar números como
+alfanuméricos, pero éstos pierden sus propiedades matemáticas, es decir, no
+es posible hacer operaciones aritméticas con datos alfanuméricos. Este
+tipo de datos se representan encerrados entre comillas. Por ejemplo:
+<code>"Grupo de Usuarios PHP Puebla"</code>, <code>"1997"</code>.</li>
+<li><strong>Datos Lógicos</strong>. Son aquellos que sólo pueden tener dos valores:
+<strong>cierto</strong> o <strong>falso</strong> ya que representan el resultado de una
+<strong>comparación</strong> entre otros datos (numéricos o alfanuméricos).</li>
+</ul>
+<h2 id="identificadores">Identificadores</h2>
+<p>Los identificadores representan los datos de un programa. Un identificador es
+una <strong>secuencia de caracteres que sirve para identificar un dato en la
+computadora</strong>.</p>
+<p>Ejemplos: <code>nombre</code>, <code>numeroDeHoras</code>, <code>calificacion2</code></p>
+<h3 id="reglas-para-formar-un-identificador">Reglas para formar un identificador</h3>
+<p>Los identificadores deben seguir las siguientes reglas:</p>
+<ul>
+<li>Deben comenzar con una letra (A a Z, mayúsculas o minúsculas) y no deben
+contener espacios en blanco.</li>
+<li>Letras, dígitos y el guión bajo (<code>_</code>) están permitidos después del primer
+caracter.</li>
+</ul>
+<h2 id="constantes-y-variables">Constantes y Variables</h2>
+<p>Los identificadores sirven para nombrar los dos tipos de elementos más
+importantes y más usados en un programa o algoritmo, las constantes y las
+variables.</p>
+<dl>
+<dt>Constante</dt>
+<dd><p>Una constante es un dato numérico o alfanumérico cuyo valor <strong>no cambia</strong>
+dentro de un algoritmo o durante la ejecución de un programa.</p>
+<p>Por ejemplo: <code>PI = 3.1416</code></p></dd>
+<dt>Variable</dt>
+<dd><p>Es es un valor numérico o alfanumérico cuyo contenido puede <strong>cambiar</strong>
+durante la ejecución de un programa o algoritmo.</p>
+<p>Por ejemplo:</p>
+<p><code>perimetro = PI * diametro</code></p>
+<p>Las variables son : <code>diametro</code> y <code>perimetro</code>, la constante es <code>PI</code>.</p></dd>
+</dl>
+<h3 id="notacin-para-variables-y-constantes">Notación para Variables y Constantes</h3>
+<p>Existen varias <strong>formas estándar</strong> de nombrar variables y constantes, a las
+cuales se les conoce como <strong>notaciones</strong>. </p>
+<p>Una de las más comunes es la notación <em>Camel</em>, la cual consiste en escribir los
+identificadores con la primera letra de cada palabra en mayúsculas y el resto
+en minúsculas, por ejemplo: <code>EndOfFile</code>. Se le llama notación &quot;Camel&quot; porque
+los identificadores semejan las jorobas de un camello.</p>
+<p>Existen dos variantes de la notación:</p>
+<ul>
+<li><code>UpperCamelCase</code>: en esta variante la primera letra también es mayúscula.</li>
+<li><code>lowerCamelCase</code>: en esta variante la primera letra es minúscula.</li>
+</ul>
+<p>En muchos lenguajes de programación, se tiene la costumbre de denotar las
+constantes mediante identificadores en mayúsculas. En este caso la notación
+Camel no es aplicable y solo queda usar la notación <strong>C</strong>, por ejemplo:
+<code>END_OF_FILE</code>, <code>PI</code>, etc.</p>
+<h3 id="clasificacin-de-las-variables">Clasificación de las Variables</h3>
+<p>Las variables se clasifican por su contenido en: <strong>numéricas</strong>, <strong>lógicas</strong> y
+<strong>alfanuméricas</strong> (cadenas); y por su uso en: <strong>variables de trabajo</strong>,
+<strong>contadores</strong> y <strong>acumuladores</strong>. La siguiente Figura muestra gráficamente
+esta clasificación.</p>
+<p><img src="images/tipos-variables.png" alt="Tipos de variables" /></p>
+<h4 id="por-su-contenido">Por su contenido</h4>
+<ul>
+<li><strong>Variable Numéricas.</strong> Son aquellas en las cuales se almacenan valores
+numéricos, positivos o negativos, es decir almacenan secuencias de dígitos
+(números del 0 al 9), signos (+ y -) y el punto decimal. Ejemplo:
+<code>salario = 3500.85</code>, <code>costo = 2500</code>, <code>temperatura = -2</code>.</li>
+<li><strong>Variables Lógicas.</strong> Son aquellas que sólo pueden tener dos valores:
+verdadero o falso (<code>V</code> ó <code>F</code>), éstos representan el resultado de una
+comparación entre otros datos (operación relacional).</li>
+<li><strong>Variables Alfanuméricas.</strong> Variables formadas por caracteres
+alfanuméricos (letras, números y caracteres especiales). Por ejemplo:
+<code>letra = 'a'</code>, <code>apellido = "López"</code>, <code>direccion = "Av. Libertad  #190"</code>.</li>
+</ul>
+<h4 id="por-su-uso">Por su uso</h4>
+<ul>
+<li><strong>Variables de Trabajo.</strong> Variables que reciben el resultado de una
+operación matemática. Por ejemplo: <code>suma = a + b / c</code>.</li>
+<li><strong>Contadores.</strong> Se utilizan para llevar el control del número de ocasiones
+en que se realiza una operación. Generalmente este tipo de variable cuenta
+de uno en uno. Por ejemplo:
+<code>contador = 0</code>
+<code>contador = contador + 1</code>
+<code>contador = contador + 1</code>
+<code>contador = contador + 1</code>
+La variable <code>contador</code> contó 3 veces en este ejemplo.</li>
+<li><strong>Acumuladores.</strong> Son variables que sirven para llevar la suma acumulativa
+de una serie de valores que se van leyendo o calculando progresivamente. Por
+ejemplo:
+<code>deuda = 0</code>
+<code>deuda = deuda + 25</code>
+<code>deuda = deuda + 5</code>
+<code>deuda = deuda + 10</code>
+En este caso la variable <code>deuda</code> acumula la cantidad que se debe a alguien
+y su valor final es 40.</li>
+</ul>
+<h3 id="ejercicios-propuestos">Ejercicios propuestos</h3>
+<ol>
+<li>¿Cuál es la clasificación de los tipos de datos de acuerdo a su complejidad?</li>
+<li>Describa el tipo de contenido que pueden almacenar los tipos de datos
+simples.</li>
+<li>¿Qués un identificador y cuáles son las dos reglas básicas para formar un
+identificador.</li>
+<li>Defina que es una variable y qué es una constante.</li>
+<li>¿Cual es la notación que se debe usar para una variable y para una
+constante? De un ejemplo de cada una.</li>
+<li>¿Cuál es la clasificación de las variables por su uso y su contenido?</li>
+</ol>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <p class="text-muted">
+            website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+<script>
+    $(function() {
+        $("section>h1").wrap('<div class="page-header" />');
+        // Syntax highlighting
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

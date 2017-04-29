@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lógica de programación</title>
+
+    <link rel="icon" type="image/png" href="http://www.montealegreluis.com/logica-programacion/favicon.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/highlight.dark.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/main.css">
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+
+    <a class="navbar-brand" href="http://www.montealegreluis.com/logica-programacion/">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Lógica de programación
+        <small class="hidden-xs hidden-sm">
+            
+        </small>
+    </a>
+
+            <a href="https://github.com/MontealegreLuis/logica-programacion">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
+</header>
+
+
+<main class="container-fluid">
+
+    
+        <nav id="sidebar" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/basicos.html">
+                            Conceptos básicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/entidades-primitivas.html">
+                            Entidades primitivas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/expresiones.html">
+                            Expresiones
+                        </a>
+                    </li>
+                                    <li class="active">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguajes-algoritmicos.html">
+                            Lenguajes algorítmicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/programacion-estructurada.html">
+                            Programación estructurada
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-secuenciales.html">
+                            Estructuras secuenciales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-condicionales.html">
+                            Estructuras condicionales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-ciclicas.html">
+                            Estructuras cíclicas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/arreglos.html">
+                            Arreglos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/subprogramas.html">
+                            Subprogramas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguaje-c.html">
+                            Lenguaje C
+                        </a>
+                    </li>
+                            </ul>
+
+        </nav>
+
+    
+    <div class="row">
+
+        <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+            <h1 id="lenguajes-algortmicos">Lenguajes Algorítmicos</h1>
+<p>En el <a href="docs/entidades-primitivas.html">capítulo 2</a> describimos qué es un
+algoritmo, su clasificación y los lenguajes en los que podemos describirlos. Las
+dos herramientas utilizadas comúnmente para diseñar algoritmos son:</p>
+<ul>
+<li>el <strong>diagrama de flujo</strong> (lenguaje gráfico) y</li>
+<li>el <strong>pseudocódigo</strong> (lenguaje no gráfico),</li>
+</ul>
+<p>los cuales describiremos en detalle en este Capítulo.</p>
+<h2 id="diagrama-de-flujo">Diagrama de Flujo</h2>
+<p>Un diagrama de flujo es la representación gráfica de un algoritmo. Esta
+representación gráfica se da cuando varios símbolos (que indican diferentes
+procesos en la computadora), se relacionan entre sí mediante líneas que indican
+el orden en que se deben ejecutar los procesos. Los símbolos utilizados han
+sido normalizados por el Instituto Norteamericano de Normalización (ANSI,
+<em>American National Standard Institute</em>).</p>
+<table>
+<thead>
+<tr>
+<th>Símbolo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Símbolo terminal <br> <img src="images/simbolo-terminal.png" alt="Terminal" /></td>
+<td>Indica el inicio y el final del diagrama de flujo.</td>
+</tr>
+<tr>
+<td>Símbolo de expresión <br> <img src="images/simbolo-asignacion.png" alt="Expresión" /></td>
+<td>Indica la ejecución de una expresión cuyo resultado se asigna a una variable.</td>
+</tr>
+<tr>
+<td>Símbolo de entrada <br> <img src="images/simbolo-entrada.png" alt="Entrada" /></td>
+<td>Indica la entrada de datos del teclado.</td>
+</tr>
+<tr>
+<td>Símbolo de salida <br> <img src="images/simbolo-pantalla.png" alt="Salida" /></td>
+<td>Indica la salida de información en la pantalla o monitor.</td>
+</tr>
+<tr>
+<td>Líneas de flujo o dirección <br> <img src="images/simbolo-lineas-flujo.png" alt="Flujo" /></td>
+<td>Indican la secuencia en que se realizan las operaciones.</td>
+</tr>
+</tbody>
+</table>
+<p>Algunas recomendaciones para el diseño de diagramas de flujo son:</p>
+<ul>
+<li>Se deben usar solamente líneas de flujo horizontales y/o verticales.</li>
+<li>Se debe evitar el cruce de líneas utilizando los conectores.</li>
+<li>No deben quedar líneas de flujo sin conectar.</li>
+<li>Se deben trazar los símbolos de manera que se puedan leer de arriba
+hacia abajo y de izquierda a derecha.</li>
+</ul>
+<h2 id="pseudocdigo">Pseudocódigo</h2>
+<p>El pseudocódigo es una mezcla de un lenguaje de programación y el español (o
+cualquier otro idioma). El pseudocódigo se puede definir como un lenguaje de
+especificación de algoritmos.</p>
+<p>El pseudocódigo es la representación narrativa de los pasos que debe seguir un
+algoritmo para dar solución a un problema determinado. El pseudocódigo utiliza
+palabras que indican el proceso a realizar.</p>
+<p>Algunas de las ventajas de utilizar un pseudocódigo a un diagrama de flujo son:</p>
+<ul>
+<li>Ocupa menos espacio en una hoja de papel</li>
+<li>Permite representar en forma fácil operaciones repetitivas complejas</li>
+<li>Es muy fácil pasar de pseudocódigo a un programa en algún lenguaje
+de programación.</li>
+</ul>
+<p>La siguiente tabla resume las principales equivalencias entre los símbolos de los
+diagramas de flujo y el pseudocódigo.</p>
+<table>
+<thead>
+<tr>
+<th>Símbolo</th>
+<th>Equivalencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Símbolo terminal</td>
+<td><code>inicio</code> o <code>fin</code> según sea el caso</td>
+</tr>
+<tr>
+<td>Símbolo de entrada</td>
+<td><code>leer</code></td>
+</tr>
+<tr>
+<td>Símbolo de salida</td>
+<td><code>escribir</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ejercicios-propuestos">Ejercicios Propuestos</h2>
+<ol>
+<li>¿Qué es un diagrama de flujo?</li>
+<li>Mencione tres recomendaciones al esribir diagramas de flujo</li>
+<li>¿Qué es el pseudocódigo?</li>
+<li>¿Cuáles son las ventajas de usar pseudocódigo en lugar de un diagrama de
+flujo?</li>
+</ol>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <p class="text-muted">
+            website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+<script>
+    $(function() {
+        $("section>h1").wrap('<div class="page-header" />');
+        // Syntax highlighting
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

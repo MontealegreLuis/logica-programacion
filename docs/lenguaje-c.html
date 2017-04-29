@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lógica de programación</title>
+
+    <link rel="icon" type="image/png" href="http://www.montealegreluis.com/logica-programacion/favicon.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/highlight.dark.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/main.css">
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+
+    <a class="navbar-brand" href="http://www.montealegreluis.com/logica-programacion/">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Lógica de programación
+        <small class="hidden-xs hidden-sm">
+            
+        </small>
+    </a>
+
+            <a href="https://github.com/MontealegreLuis/logica-programacion">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
+</header>
+
+
+<main class="container-fluid">
+
+    
+        <nav id="sidebar" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/basicos.html">
+                            Conceptos básicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/entidades-primitivas.html">
+                            Entidades primitivas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/expresiones.html">
+                            Expresiones
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguajes-algoritmicos.html">
+                            Lenguajes algorítmicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/programacion-estructurada.html">
+                            Programación estructurada
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-secuenciales.html">
+                            Estructuras secuenciales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-condicionales.html">
+                            Estructuras condicionales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-ciclicas.html">
+                            Estructuras cíclicas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/arreglos.html">
+                            Arreglos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/subprogramas.html">
+                            Subprogramas
+                        </a>
+                    </li>
+                                    <li class="active">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguaje-c.html">
+                            Lenguaje C
+                        </a>
+                    </li>
+                            </ul>
+
+        </nav>
+
+    
+    <div class="row">
+
+        <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+            <h1 id="el-lenguaje-de-programacin-c">El lenguaje de programación C</h1>
+<p>EL lenguaje C es el resultado de un proceso de desarrollo que inició con un
+lenguaje denominado BCPL escrito por Martin Richards. Este influenció a otro
+llamado B (inventado por Ken Thompson). En los años 70’s para el primer sistema
+UNIX en un DEC PDP-7; éste lenguaje llevó a la aparición de C. El primer
+compilador de C fue escrito por Kernighan y Dennis Ritchie en 1972 en la ATT
+para un DEC PDP-11 y escribió el propio sistema operativo en C.</p>
+<p>Con la popularidad de las microcomputadoras muchas compañías comenzaron a
+implementar su propio C por lo cual surgieron discrepancias entre sí. Por esta
+razón el ANSI (<strong>American National Standars Institute</strong>), estableció un comité
+en 1983 para crear una definición no ambigua del lenguaje C e independiente de
+la máquina que pudiera utilizarse en todos los tipos de C. Algunos de las C
+existentes son:</p>
+<ul>
+<li>Ansi C</li>
+<li>Zortech C++</li>
+<li>Quick C</li>
+<li>C++</li>
+<li>Turbo C</li>
+<li>Turbo C++</li>
+<li>Borland C</li>
+<li>Microsoft C</li>
+<li>Visual C</li>
+<li>C Builder</li>
+</ul>
+<p>C es un lenguaje de programación de nivel medio ya que combina los elementos del
+lenguaje de alto nivel con la funcionalidad del ensamblador. Su característica
+principal es ser portable, es decir, es posible adaptar los programas escritos
+para un tipo de computadora en otra. Otra de sus características principales es
+el ser estructurado. El lenguaje C inicialmente fue creado para la programación
+de:</p>
+<ul>
+<li>Sistemas operativos</li>
+<li>Intérpretes</li>
+<li>Editores</li>
+<li>Ensambladores</li>
+<li>Compiladores</li>
+<li>Administradores de bases de datos</li>
+</ul>
+<p>Actualmente, debido a sus características, puede ser utilizado para todo tipo de
+programas.</p>
+<h2 id="traductores-de-programas">Traductores de programas</h2>
+<p>Los traductores son programas que traducen los programas en código fuente,
+escritos en lenguajes de alto nivel, a programas escritos en lenguaje máquina.
+Los traductores pueden ser de dos tipos: compiladores e interpretes</p>
+<h3 id="compiladores">Compiladores</h3>
+<p>Un <strong>compilador es un programa que traduce</strong> un programa escrito en un lenguaje
+de programación, llamado <strong>lenguaje fuente</strong>, a otro lenguaje de programación,
+llamado <strong>lenguaje objeto</strong>, generando un programa equivalente que la máquina
+será capaz de interpretar. Usualmente el segundo lenguaje es lenguaje de máquina,
+pero también puede ser simplemente texto.</p>
+<p>Además el compilador realiza una comprobación de errores en el programa, es
+decir, revisa que todo este en orden por ejemplo <strong>variables e instrucciones
+bien definidas</strong>, revisa todo lo referente a <strong>cuestiones sintácticas</strong>. Está
+fuera del alcance del compilador verificar que el algoritmo utilizado en el
+programa funcione bien. A este proceso de traducción se le conoce como
+<strong>compilación</strong>. La siguiente figura ilustra el proceso de compilación descrito.</p>
+<p><img src="images/proceso-compilacion.png" alt="Proceso de compilación" /></p>
+<p>De esta manera un programador puede diseñar un programa en un lenguaje mucho más
+cercano a como piensa un ser humano, para luego compilarlo a un programa
+manejable por una computadora.</p>
+<p>Entrando en más detalle un programa se captura en un editor, el cual produce un
+programa fuente, que a su vez es compilado obteniendo un archivo parcial (<strong>un
+programa objeto</strong>) que tiene extensión <em>.obj</em> luego el compilador invoca al
+montador <strong>linker</strong> que convierte el programa objeto en un programa ejecutable
+con extensión <em>.exe</em> que como ya sabemos es un archivo que esta en formato
+binario (ceros y unos) y que puede funcionar por sí solo. La siguiente figura
+muestra los pasos que se suceden para obtener un programa ejecutable desde el
+código fuente:</p>
+<p><img src="images/proceso-ejecucion.png" alt="Proceso de ejecución" /></p>
+<h3 id="intrpretes">Intérpretes</h3>
+<p>Un intérprete es un programa capaz de <strong>analizar y ejecutar programas escritos
+en un lenguaje de alto nivel</strong>. Los intérpretes se diferencian de los
+compiladores en que mientras los compiladores traducen un programa desde un
+lenguaje de programación a código máquina, los primeros (los interpretes) sólo
+realizan la traducción a medida que sea necesario, típicamente, <strong>instrucción
+por instrucción</strong>, y normalmente no guardan el resultado de dicha traducción. La
+siguiente figura describe el proceso realizado por un intérprete.</p>
+<p><img src="images/proceso-interprete.png" alt="Proceso de interpretación" /></p>
+<p>Los programas interpretados suelen ser <strong>más lentos</strong> que los compilados debido
+a la necesidad de traducir el programa mientras se ejecuta, pero a cambio
+<strong>son más flexibles como entornos de programación y depuración</strong> (lo que se
+traduce, por ejemplo, en una mayor facilidad para reemplazar o agregar partes
+enteras a un programa), y permiten ofrecer al programa interpretado un <strong>entorno
+independiente de la máquina donde se ejecuta el intérprete</strong> (lo que se conoce
+comúnmente como <strong>máquina virtual</strong>).</p>
+<p>Comparando su actuación con la de un ser humano, <strong>un compilador equivale a un
+traductor profesional</strong> que, a partir de un texto, prepara otro independiente
+traducido a otra lengua, mientras que un <strong>intérprete corresponde al intérprete
+humano</strong>, que traduce de viva voz las palabras que oye, sin dejar constancia por
+escrito.</p>
+<h3 id="puesta-a-punto-de-un-programa">Puesta a punto de un programa</h3>
+<p>La puesta a punto del programa hace referencia a la <strong>localización</strong>,
+<strong>verificación</strong> y <strong>corrección de errores de programación</strong> para obtener un
+programa que funcione correctamente. La puesta a punto consta de las siguientes
+etapas:</p>
+<ol>
+<li><strong>Detección de errores</strong>. Esta etapa ocurre al compilar o ejecutar un
+programa. Sirve para verificar que el programa está bien escrito (al
+compilar) y que devuelve resultados correctos (al ejecutar).</li>
+<li><strong>Depuración de errores</strong>. Esta fase consta de dos partes:
+<ul>
+<li><strong>Localización</strong>. Consiste en ubicar la(s) línea(s) de código que
+está(n) mal escrita(s) o que está(n) produciendo resultados incorrectos.</li>
+<li><strong>Eliminación</strong>. Una vez ubicado el error se prosigue a corregirlo.</li>
+</ul></li>
+<li><strong>Prueba del programa</strong>. Después de ubicar y corregir los errores se debe
+comprobar que los cambios fueron pertinentes. En caso de encontrar o producir
+nuevos errores se debe volver al paso 1.</li>
+</ol>
+<p>Los errores típicos que se presentan en un programa son:</p>
+<ul>
+<li>Errores de sintaxis</li>
+<li>Errores de lógica</li>
+</ul>
+<h4 id="errores-de-sintaxis">Errores de sintaxis</h4>
+<p>Los errores de sintaxis se originan en el momento de <strong>compilación/interpretación</strong>
+del programa y se deben a <strong>causas propias de la sintaxis del lenguaje</strong> como
+escrituras incorrectas de instrucciones, omisión de signos, etc. Estos errores
+se descubren con <strong>facilidad</strong>.</p>
+<h4 id="errores-de-lgica">Errores de lógica</h4>
+<p>Los errores en la lógica del programa pueden ser producidos en la fase de
+<strong>compilación</strong> o <strong>ejecución</strong>. Los que suceden durante la ejecución de un
+programa, normalmente, son más <strong>difíciles de detectar</strong>. Se pueden observar dos
+categorías: los que <strong>detienen la ejecución del programa</strong> y <strong>los que no la
+detienen</strong>, pero que producen resultados erróneos.</p>
+<ul>
+<li>Por ejemplo: si se tiene la asignación <code>r = s / c</code> y <code>c</code> es cero, se produce
+un error de <strong>división por cero</strong>. Muchos de los errores lógicos solo se
+manifiestan en el momento de la ejecución; por ello se denominan también
+errores de ejecución.</li>
+<li>Un ejemplo más puede ocurrir con la asignación <code>l = 2 * p * r</code>. Si se omite
+el segundo símbolo del producto, la instrucción se convierte en <code>l = 2 * pr</code>,
+la omisión de este símbolo no se reconoce como error de sintaxis en la fase
+de compilación o interpretación, pero daría resultados erróneos al ejecutarse.</li>
+</ul>
+<h2 id="elementos-bsicos-de-un-programa">Elementos básicos de un programa</h2>
+<p>En el ámbito general, un programa codificado o escrito bajo cualquier lenguaje
+de programación estructurado consta básicamente de dos secciones:</p>
+<ul>
+<li>Sección de encabezado</li>
+<li>Sección de cuerpo de programa</li>
+</ul>
+<h3 id="la-seccin-de-encabezado">La sección de encabezado</h3>
+<p>La sección de <strong>encabezado</strong> es usada para <strong>declarar las variables y/o
+constantes</strong> (con sus respectivos <strong>tipos</strong>) que se vayan a utilizar en el
+programa, así como también el nombre de las funciones y/o procedimientos[^3] que
+ejecutarán las instrucciones de los algoritmos que incluye dicho programa.
+Además en esta sección se declaran los <strong>archivos de inclusión</strong> (archivos
+generalmente con extensión <code>.h</code> hablando de lenguaje C) que permiten el uso de
+algunas funciones que son necesarias para el desarrollo del programa. Igualmente
+se especifican las estructuras de datos complejas que se vayan a manejar.</p>
+<h3 id="la-seccin-de-cuerpo-de-programa">La sección de cuerpo de programa</h3>
+<p>En la sección cuerpo de programa realmente se describen todos los procedimientos
+y/o funciones que se van a ejecutar dentro del programa así como también el
+código del <strong>programa principal</strong>. En un cuerpo de programa es <strong>obligatorio</strong>
+que haya una <strong>parte principal</strong> delimitada por <code>Begin ... End</code> para Pascal ó
+<code>void main() { ... }</code> para lenguaje C, mientras que los procedimientos y/o
+funciones son opcionales.</p>
+<h2 id="elementos-de-un-programa-en-c">Elementos de un programa en C</h2>
+<p>El siguiente ejemplo ilustra algunos de los componentes que con mayor
+frecuencia se usan cuando se trata de codificar programas utilizando el
+lenguaje de programación C.</p>
+<pre><code class="language-C"> #include&lt;stdio.h&gt;
+
+ /**
+  * Programa que lee un numero ingresado por teclado
+  * y lo muestra en pantalla
+  */
+ void main() {
+    int numero;
+    printf("Digite un numero entre 1 y 100");
+    scanf("%d",&amp;numero);
+    printf("\n El numero que ingresó es: %d",numero);
+ }</code></pre>
+<p>En las secciones siguientes se explican cada una de las partes de este ejemplo.</p>
+<h3 id="la-directiva">La directiva <code>#include</code></h3>
+<p>La directiva <code>#include</code> da instrucciones al compilador C para que añada el
+contenido de un <strong>archivo de inclusión</strong> al programa durante la compilación. Un
+archivo de inclusión es un archivo contiene información necesaria para el
+compilador. Varios de estos archivos (algunas veces llamados archivos de
+encabezado) se proporcionan con el compilador. <strong>Nunca</strong> se necesita modificar
+la información de estos archivos y esta es la razón por la cual se mantienen
+separados del código fuente. Todos los archivos de inclusión deben tener la
+extensión <code>.h</code> por ejemplo <code>#include &lt;stdio.h&gt;</code>. En el caso del archivo de
+inclusión <code>stdio.h</code> le indica al compilador que se han incluido funciones
+estándares <code>std</code> de entrada <code>i = input</code> y salida <code>o = output</code> que podrá utilizar
+en el desarrollo del programa por ejemplo funciones como <code>printf()</code> y <code>scanf()</code>.</p>
+<p>La directiva <code>#include</code>, en este programa de ejemplo, significa &quot;añada el
+contenido del archivo <code>stdio.h</code>&quot;.</p>
+<h3 id="la-funcin">La función <code>main</code></h3>
+<p>La palabra <code>main</code> es muy importante y debe aparecer solo una vez en todo
+programa C. En C, todo el código está basado en funciones. El programa principal
+no es la excepción. <code>main()</code> indica el comienzo de la función principal del
+programa la cual se <em>delimita con llaves</em>. Este componente es obligatorio en
+cualquier programa que se compile con lenguaje C. En su forma simple la función
+<code>main</code> consiste en la palabra <code>void</code>, la cual indica que la función <code>main</code> no
+devuelve ningún valor como resultado, seguida de la palabra <code>main</code>, la cual
+representa el nombre de la función, seguida de paréntesis <code>()</code> y las
+instrucciones que ejecutan se encuentran demarcadas por las dos llaves <code>{</code> para
+indicar <strong>Inicio</strong> y <code>}</code> para indicar <strong>Fin</strong>.</p>
+<h3 id="definicin-de-identificadores">Definición de identificadores</h3>
+<p><strong>Un identificador es un nombre asignado a una posición de almacenamiento de
+datos</strong> (variable o constante). El programa utiliza variables para guardar
+varios tipos de datos durante la ejecución del programa. En C, <strong>una variable
+debe definirse antes de que pueda ser usada</strong>. Una definición de variable le
+informa al compilador el nombre de la variable y el tipo de datos que va a
+guardar. En el programa de ejemplo la definición de la línea <code>int numero;</code>
+define una variable, llamada <code>numero</code> que guardará un valor de tipo entero.</p>
+<p>Las variables se pueden declarar en la zona de encabezado de un programa o al
+inicio de una función o un procedimiento. Dos reglas se deben tener en mente
+cuando se definen los identificadores son:</p>
+<ol>
+<li>El &quot;tamaño&quot; de los caracteres alfabéticos es importante. Usar <code>PRINCIPAL</code>
+para el nombre de una variable en C, no es lo mismo que usar <code>principal</code>,
+como tampoco es lo mismo que usar <code>PrInCiPaL</code>. Las tres palabras se refieren
+a variables o identificadores diferentes.</li>
+<li>De acuerdo al estándar ANSI-C, al darle nombre a un identificador solo serán
+significativos los primeros 31 caracteres, todo caracter mas allá de este
+límite será ignorado por cualquier compilador que cumpla la norma ANSI-C</li>
+</ol>
+<p>Un elemento importante es el símbolo de subrayado <code>_</code> que puede utilizarse como
+parte del nombre de una variable. Debido a que una gran parte de los escritores
+de compiladores utilizan el subrayado como primer carácter para los nombres de
+variables internas de sistema, es aconsejable evitar el uso del subrayado para
+iniciar un identificador y así evitar la posibilidad de una confusión de nombres
+en la etapa de compilación. Los identificadores con doble subrayado <code>__</code> están
+reservados para uso del compilador así como los identificadores que empiezan con
+un subrayado seguido de una letra mayúscula, por ejemplo <code>_A</code>. Esto es
+importante, respetar ésta sencilla regla evitará depurar errores innecesarios.</p>
+<h3 id="tipos-de-datos-en-c">Tipos de datos en C</h3>
+<p>Para definir un identificador en C es necsario especificar su tipo de dato. Los
+identificadores de tipos de datos, son un subconjunto de identificadores que en
+cualquier lenguaje de programación se conocen como <strong>palabras reservadas</strong>.
+Dichas palabras reservdas son de uso exclusivo del compilador y no pueden usarse
+como identificadores de variables y constantes. Los tipos de datos definidos en
+C son:</p>
+<ul>
+<li><code>int</code> Indica un tipo de dato entero con signo de 16, 32 ó 64 bits,
+dependiendo del compilador. En sistemas de 16 bits su rango de valores es de
+<code>-32768</code> a <code>32767</code>. Para sistemas de 32 bits el rango es de <code>-2147483648</code> a
+<code>2147483647</code>. En sistemas de 64 bits el rango será de
+<code>1.7<sup>+-308</sup></code>. Actualmente son muy pocos los compiladores
+con capacidad de manejar datos de tipo <code>int</code> de 64 bits, lo usual son
+sistemas de 16 ó 32 bits.</li>
+<li><code>float</code> Permite almacenar un número real de 32 bits cuyo rango va de
+<code>3.4<sup>+-38</sup></code>. Generalmente su precisión es de 7 dígitos.</li>
+<li><code>char</code> Un tipo de dato específico para manejo de caracteres de 8 bits de
+rango igual a <code>-128</code> a <code>127</code>.</li>
+</ul>
+<p>Existen más tipos definidos en C pero por el momento solo será necesario usar los
+tipos aquí descritos.</p>
+<h3 id="la-funcin-1">La función <code>printf()</code></h3>
+<p>La función <code>printf()</code> es una función de la biblioteca <code>stdio.h</code> que despliega
+información en la pantalla. Acepta un <strong>string de formato</strong> y cualquier número
+de argumentos. Estos argumentos se aplican a cada uno de los <strong>especificadores
+de formato</strong> contenidos en <code>format</code>. Un especificador de formato toma la forma:
+<code>%F</code>, donde <code>F</code> indica el tipo de datos al que se debe dar formato.</p>
+<p>El tipo puede ser:</p>
+<p><code>%d</code>, para números enteros <code>%f</code> para números reales y <code>%c</code> para caracteres.</p>
+<p>Por ejemplo,</p>
+<pre><code class="language-c">printf("Este es un mensaje simple");
+printf("Se muestra un numero entero %d", numeroEntero);
+printf("Se muestra un numero real %f", numeroReal);
+printf("Se muestra un numero entero %c", caracter);</code></pre>
+<h3 id="la-funcin-2">La función <code>scanf()</code></h3>
+<p>La función <code>scanf()</code> es otra función de la librería o biblioteca <code>stdio.h</code>. Ella
+lee datos desde el teclado y asigna los datos a una o más variables del programa.</p>
+<p>Por ejemplo: <code>scanf("%d", &amp;a);</code> lee un valor entero y este es asignado a la
+dirección en memoria de la variable <code>a</code>.</p>
+<h2 id="estilo-de-programacin">Estilo de Programación</h2>
+<p><strong>No basta con escribir un programa que funcione, el código tiene que estar bien
+escrito</strong>. Muchas veces se escribe el código pensando que la única persona que
+lo modificará es el mismo programador. Y cuando llega alguien más, y comienza a
+revisar el código, comienzan los problemas.</p>
+<p>Que un programa funcione o no, es en buena medida <strong>independiente de que esté
+bien o mal escrito</strong>. No obstante:</p>
+<ol>
+<li>Un programa mal escrito tiene una probabilidad mayor de no funcionar
+correctamente. Un buen estilo facilita la corrección.</li>
+<li>Es muy difícil depurar un programa mal escrito.</li>
+<li>Es muy costoso mantener un programa mal escrito.</li>
+</ol>
+<p>Estos problemas se solucionan adoptando un <strong>estilo de programación</strong>. El estilo
+de programación (también llamado <strong>estándar de código</strong> o <strong>convención de
+código</strong>) es un término que describe, en ciertos lenguajes de programación, un
+acuerdo para escribir el código fuente de un programa con <strong>un mismo formato</strong>.</p>
+<p>Al igual que cuando aprendemos redacción literaria, una forma excelente de
+adquirir un buen estilo es leer textos ajenos. Es por ello que se recomienda la
+lectura, y el estudio, de programas existentes. Un programa puede escribirse con
+mejor o peor estilo.</p>
+<p>El buen estilo, al tratarse de algo subjetivo, es difícil de categorizar
+concretamente; con todo, existen un número de <strong>características generales</strong>. Con
+el advenimiento del software que da <strong>formato al código fuente</strong> de forma
+automática, el foco en cómo éste debe de ser escrito debe evolucionar de forma
+más amplia a la <strong>elección de nombres</strong>, <strong>lógica</strong> y <strong>otras técnicas</strong>.</p>
+<p>Podemos clasificar los elementos a los que da formato el estilo de programación
+de la siguiente forma:</p>
+<dl>
+<dt>Identificadores apropiados</dt>
+<dd><p>Una pieza clave para un buen estilo es la elección apropiada de
+identificadores. Los identificadores pobremente nombrados dificultan la
+lectura del código fuente y su comprensión. Se recomienda que un
+identificador contenga al menos una palabra completa y que cuando más
+incluya tres.</p></dd>
+<dt>Estilo de indentación</dt>
+<dd><p>Indentación es un anglicismo de uso común en programación. Por indentación
+se entiende mover un bloque lógico de código hacia la derecha insertando
+espacios o tabuladores para separarlo de los delimitadores de bloques, (por
+ejemplo las llaves en C). La indentación es también un punto clave del buen
+estilo. Usando un estilo lógico y consistente hace que el código sea más
+legible.</p></dd>
+</dl>
+<p>En las siguientes secciones se detallará parte del estilo de programación de
+Java, se ha elegido utilzarlo porque Java está basado en C y por ser un lenguaje
+muy difundido que se sigue utilizando.</p>
+<h3 id="indentacin">Indentación</h3>
+<p>Se deben usar cuatro espacios como la unidad de indentación.</p>
+<h4 id="tamao-de-la-lnea">Tamaño de la línea</h4>
+<p>Se deben evitar las líneas mayores a 80 caracteres. El tamaño de las líneas de
+documentación deben ser ligeramente menor al de las líneas de código, no deben
+ser mayores a los 70 caracteres.</p>
+<h4 id="divisin-de-lneas">División de líneas</h4>
+<p>Cuando una expresión no quepa en una sola línea se debe dividir de acuerdo a las
+siguientes reglas:</p>
+<ul>
+<li>Divida después de una coma.</li>
+<li>Divida antes de un operador.</li>
+<li>Indente la línea nueva al inicio de la expresión al mismo nivel que
+la línea anterior.</li>
+<li>Si las reglas anteriores producen código confuso que se encuentre
+muy a la derecha, indente sólo con 8 espacios.</li>
+</ul>
+<p>Oberve los siguientes ejemplos:</p>
+<pre><code class="language-c">nombreLargo1 = nombreLargo2 * nombreLargo3 + nombreLargo4
+               + 4 * nombreLargo5
+
+printf("Ejemplo de linea larga dividida en %d partes",
+        variasPartes);</code></pre>
+<h3 id="comentarios">Comentarios</h3>
+<p>Los comentarios forman parte de la documentación interna de un programa. Se
+distinguen dos tipos de comentarios: <strong>comentarios de implementación</strong> y
+<strong>comentarios de documentación</strong>. Los comentarios de implementación son aquellos
+que están delimitados por <code>/* ... */</code> y <code>//</code>. Los comentarios de documentación
+están delimitados por <code>/** ... */</code> y son nativos de Java.</p>
+<dl>
+<dt>Comentarios de implementación</dt>
+<dd><p>Los comentarios de implementación son un medio para comentar código y
+explicar los <strong>detalles de la implementación</strong>.</p></dd>
+<dt>Comentarios de documentación</dt>
+<dd><p>Los comentarios de documentación están diseñados para <strong>describir la
+especificación del código</strong> sin tomar en cuenta la implementación. Están
+dirigidos a desarrolladores que podrían no contar con el código fuente.</p></dd>
+</dl>
+<p>Los comentarios se deben usar para dar describir brevemente código y
+proporcionar información adicional que no se encuentra disponible de manera
+obvia en el código. Los comentarios sólo deben tener información relevante para
+la <strong>comprensión del programa</strong>.</p>
+<p><strong>Nota</strong>: La frecuencia de los comentarios refleja con frecuencia código de mala
+calidad. Cuando se sienta la necesidad de agregar un comentario, se debe
+considerar la posibilidad de reescribir el código a fin de hacerlo más claro.</p>
+<h4 id="comentarios-de-implementacin">Comentarios de implementación</h4>
+<p>Los programas pueden tener cuatro tipos de comentarios de implementación: <strong>de
+bloque</strong>, <strong>de una sola línea</strong>, <strong>de seguimiento</strong> y <strong>de fin de línea</strong>.</p>
+<h5 id="comentarios-de-bloque">Comentarios de bloque</h5>
+<p>Los comentarios de bloque se usan para proporcionar descripciones de
+<strong>programas</strong>, <strong>funciones</strong>, <strong>estructuras de datos</strong> y <strong>algoritmos</strong>. Estos
+comentarios deben aparecer al inicio de un archivo fuente y antes de cada
+función.</p>
+<p>También pueden usarse en otros lugares, por ejemplo adentro de las funciones.
+Los comentarios de bloque dentro de una función deben indentarse al mismo nivel
+del código que describen. Este tipo de comentarios deben iniciarse con una línea
+en blanco para separarlos del resto del código. Estos comentarios inician cada
+línea con un asterisco</p>
+<pre><code class="language-c">/*
+ * Este es un comentario de bloque
+ * que ocupa mas de una linea
+ */</code></pre>
+<h5 id="comentarios-de-una-lnea">Comentarios de una línea</h5>
+<p>Se pueden escribir comentarios cortos en una sóla línea indentada al mismo nivel
+que el código que se comenta. Si un comentario no se puede escribir en una sola
+línea, se debe seguir el formato de bloque. Un comentario de una línea debe
+estar precedido por una línea en blanco.</p>
+<pre><code class="language-c">/* Este es un comentario de una sola linea */</code></pre>
+<h5 id="comentarios-de-seguimiento">Comentarios de seguimiento</h5>
+<p>Algunos comentarios <strong>muy pequeños</strong> pueden aparecer en la misma línea que el
+código que describen, pero deben separarse lo suficiente para distinguirlos del
+código. Si hay más de un comentario corto dentro del mismo bloque, todos deben
+indentarse a la misma altura. Se debe evitar comentar cada línea de código.</p>
+<pre><code class="language-c">area = lado * lado;    /* Se calcula el area del cuadrado */</code></pre>
+<h5 id="comentarios-de-fin-de-lnea">Comentarios de fin de línea</h5>
+<p>El delimitador de comentario <code>//</code> inicia un comentario de una línea completa o
+un comentario de fin de línea. Puede comentar una línea completa de código o
+sólo parte de la línea. No debe usarse en varias líneas consecutivas.</p>
+<pre><code class="language-c">suma = a + b;   // Se realiza la suma
+// Se muestra el resultado en pantalla
+printf("Es resultado de la suma es: %d", suma);</code></pre>
+<h4 id="comentarios-de-documentacin">Comentarios de documentación</h4>
+<p>Los comentarios de documentación describen funciones. Cada comentario se
+coloca dentro de los delimitadores <code>/** ... */</code>. Este comentario debe aparecer
+antes de la declaración de una función. En el siguiente ejemplo aparece antes de
+la función <code>main()</code>.</p>
+<pre><code class="language-c">/**
+ * Este programa resuelve el siguiente problema: ...
+ */
+void main() {
+    ...
+}</code></pre>
+<p>Los comentarios de documentación no deben colocarse dentro de una función.</p>
+<h3 id="declaraciones">Declaraciones</h3>
+<p>A continuación se describen las reglas que se deben seguir al declarar
+variables. Se revisarán aspectos tales como: dónde declarar e inicializar
+variables.</p>
+<h4 id="declaracin-por-lnea">Declaración por línea</h4>
+<p>Se recomienda una declaración por línea dado que fomenta la inclusión de
+comentarios. Por ejemplo:</p>
+<pre><code class="language-c">int nivel;   // Almacena el nivel de indentacion
+int tamano;  // Tamano de la tabla</code></pre>
+<p>No se deben colocar tipos distintos en la misma línea, por ejemplo:</p>
+<pre><code class="language-c">int edad; float promedio;</code></pre>
+<h4 id="ubicacin">Ubicación</h4>
+<p>Coloque las declaraciones solo al inicio de bloques de código. Un bloque de
+código es cualquier conjunto de instrucciones rodeadas de &quot;llaves&quot; <code>{</code> y <code>}</code>. No
+espere a declarar las variables hasta antes de usarlas esto puede confundir a
+otros programadores, observe el siguiente ejemplo:</p>
+<pre><code class="language-c">void main() {
+    int edad; // inicio del bloque de la funcion main
+
+    ...       // el resto de las instrucciones
+}</code></pre>
+<h4 id="inicializacin">Inicialización</h4>
+<p>Trate de inicializar las variables locales donde se declaran. La única razón
+para no hacerlo es que el valor inicial de la variable dependa del resultado de
+alguna operación posterior a la declaración. Por ejemplo;</p>
+<pre><code class="language-c">void main() {
+    int edad = 0; // se declara e inicializa "edad"
+
+    ...       // el resto de las instrucciones
+}</code></pre>
+<h3 id="espacio-en-blanco">Espacio en blanco</h3>
+<p>En esta sección se describen las reglas para colocar líneas y espacios en blanco
+dentro del código.</p>
+<h4 id="lneas-en-blanco">Líneas en blanco</h4>
+<p>Las líneas en blanco mejoran la legibilidad del código, separando las secciones
+de código que están relacionadas lógicamente.</p>
+<p>Se debe dejar una línea en blanco bajo las siguientes circunstancias:</p>
+<ul>
+<li>Entre funciones.</li>
+<li>Entre la declaración de variables en una función y la primera línea de
+código.</li>
+<li>Antes de un comentario de bloque o de una sola línea</li>
+</ul>
+<h4 id="espacios-en-blanco">Espacios en blanco</h4>
+<p>Se debe colocar un espacio en blanco en las siguientes circunstancias:</p>
+<ul>
+<li>Se debe colocar un espacio en blanco despues de una coma.</li>
+<li>Todos los operadores binarios deben separarse de sus operadores.</li>
+</ul>
+<h3 id="ejemplo-de-programa-completo">Ejemplo de programa completo</h3>
+<p>Los programas escritos en C, hasta ahora, deben seguir el siguiente orden:</p>
+<ol>
+<li>Directivas para agregar archivos de inclusion.</li>
+<li>Comentario de documentación para la función <code>main</code>.</li>
+<li>La función <code>main</code>, la cual se puede dividir en las siguientes secciones:
+<ul>
+<li><strong>Declaración e inicializaci’on de variables</strong>, cada variable debe ir
+seguida de un comentario de <strong>seguimiento</strong> que explique la función y/o
+significado de la variable dentro del programa.</li>
+<li><strong>Grupo de instrucciones de lectura de variables de entrada</strong>,
+antecedidas de un comentario de una sola línea o de bloque, que indique
+que variables se van a leer.</li>
+<li><strong>Grupo de instrucciones de proceso</strong>, las cuales deben explicarse
+usando un comentario de una sola línea o de bloque.</li>
+<li><strong>Grupo de instrucciones de salida en pantalla</strong>, las cuales se comentan
+del mismo modo que los dos grupos de instrucciones descritos
+anteriormente.</li>
+</ul></li>
+</ol>
+<p>Observe el siguiente ejemplo, note que incluye cada una de las partes mencionadas
+con anterioridad.</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+
+/**
+ * Este programa resuelve el siguiente problema:
+ * Escriba un programa que calcule el área de un
+ * rectángulo
+ */
+void main() {
+  float base;   /* El valor de la base en metros */
+  float altura; /* El valor de la altura en metros */
+  float area;   /* El valor del area en metros */
+
+  clrscr();
+
+  /* Se leen los valores de la base y la altura */
+  printf("Ingrese el valor de la base:");
+  scanf("%f", &amp;base);
+  printf("Ingrese el valor de la altura:");
+  scanf("%f", &amp;altura);
+
+  /* Se calcula el area */
+  area = base * altura;
+
+  /* Se muestra el valor del area */
+  printf("El area es de %d metros", area);
+
+  getch();
+}</code></pre>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <p class="text-muted">
+            website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+<script>
+    $(function() {
+        $("section>h1").wrap('<div class="page-header" />');
+        // Syntax highlighting
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

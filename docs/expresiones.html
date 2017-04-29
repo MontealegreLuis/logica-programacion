@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lógica de programación</title>
+
+    <link rel="icon" type="image/png" href="http://www.montealegreluis.com/logica-programacion/favicon.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/highlight.dark.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/main.css">
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+
+    <a class="navbar-brand" href="http://www.montealegreluis.com/logica-programacion/">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Lógica de programación
+        <small class="hidden-xs hidden-sm">
+            
+        </small>
+    </a>
+
+            <a href="https://github.com/MontealegreLuis/logica-programacion">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
+</header>
+
+
+<main class="container-fluid">
+
+    
+        <nav id="sidebar" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/basicos.html">
+                            Conceptos básicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/entidades-primitivas.html">
+                            Entidades primitivas
+                        </a>
+                    </li>
+                                    <li class="active">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/expresiones.html">
+                            Expresiones
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguajes-algoritmicos.html">
+                            Lenguajes algorítmicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/programacion-estructurada.html">
+                            Programación estructurada
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-secuenciales.html">
+                            Estructuras secuenciales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-condicionales.html">
+                            Estructuras condicionales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-ciclicas.html">
+                            Estructuras cíclicas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/arreglos.html">
+                            Arreglos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/subprogramas.html">
+                            Subprogramas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguaje-c.html">
+                            Lenguaje C
+                        </a>
+                    </li>
+                            </ul>
+
+        </nav>
+
+    
+    <div class="row">
+
+        <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+            <h1 id="expresiones">Expresiones</h1>
+<p>En este capítulo aprenderas la relación entre los tipos de datos y las
+operaciones válidas que se pueden realizar con ellos. Los conceptos a revisar
+son:</p>
+<ul>
+<li><strong>expresiones</strong>,</li>
+<li><strong>concatenación</strong>,</li>
+<li>operaciones <strong>aritméticas</strong>,</li>
+<li>operaciones <strong>relacionales</strong>,</li>
+<li>operaciones <strong>lógicas</strong>,</li>
+<li><strong>prioridad</strong> de operaciones.</li>
+</ul>
+<h2 id="tipos-de-expresiones">Tipos de expresiones</h2>
+<p>Las expresiones son combinaciones de constantes, variables, símbolos de
+operación, y paréntesis. Por ejemplo:
+<code>a + (b + 3) / c</code>.</p>
+<p>Cada expresión resulta en un valor que se determina al evaluar las operaciones
+indicadas usando los valores de las variables y constantes implicadas.</p>
+<p>Una expresión consta de <strong>operadores y operandos</strong>. Según sea el tipo de
+datos que manipulan, las expresiones se clasifican en:</p>
+<ul>
+<li>Aritméticas</li>
+<li>Relacionales</li>
+<li>Lógicas y</li>
+<li>De concatenación</li>
+</ul>
+<h2 id="operadores-y-operandos">Operadores y Operandos</h2>
+<p>Los operadores son elementos que relacionan de forma diferente, los valores de
+una o mas variables y/o constantes. Es decir, los operadores nos permiten
+manipular valores y se dividen en cuatro grupos como se muestra en la siguiente
+Figura:</p>
+<p><img src="images/tipos-operadores.png" alt="Tipos de operadores" /></p>
+<h3 id="concatenacin">Concatenación</h3>
+<p>Una operación de concatenación involucra dos o mas valores alafanuméricos o
+cadenas, cuyo contenido se va agregando al resultado final, evaluando de
+izquierda a derecha. Generalmente representamos esta operación con el operador
+<code>+</code>, aunque algunos lenguajes de programación usan un símbolo diferente. Por
+ejemplo:</p>
+<p><code>"Hola " + "mundo"</code> dará como resultado <code>"Hola mundo"</code></p>
+<h3 id="operadores-aritmticos">Operadores Aritméticos</h3>
+<p>La forma general que tiene una operación aritmética que opera sobre dos valores
+se ilustra en la siguiente Figura:</p>
+<p><img src="images/sintaxis-operadores.png" alt="Sintaxis de operadores" /></p>
+<p>Los operadores aritméticos son válidos para tipos de datos enteros o reales.
+Si ambos son <strong>enteros</strong>, el resultado es <strong>entero</strong>; si alguno de ellos
+es <strong>real</strong>, el resultado es <strong>real</strong>. Las operaciones aritméticas son las
+siguientes:</p>
+<ul>
+<li>Suma: <code>+</code></li>
+<li>Resta: <code>-</code></li>
+<li>Multiplicación: <code>*</code></li>
+<li>División: <code>/</code></li>
+<li>Módulo (residuo de la división entera): <code>%</code></li>
+<li>Exponenciación: <code>^</code></li>
+</ul>
+<p>Ejemplos:</p>
+<table>
+<thead>
+<tr>
+<th>Expresión</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>7 / 2</code></td>
+<td><code>3.5</code></td>
+</tr>
+<tr>
+<td><code>12 % 7</code></td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td><code>4  + 2 * 5</code></td>
+<td><code>14</code></td>
+</tr>
+<tr>
+<td><code>3 ^ 2</code></td>
+<td><code>9</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="prioridad-de-los-operadores-aritmticos">Prioridad de los Operadores Aritméticos</h4>
+<p>Las operaciones aritméticas deben evaluarse de acuerdo a la importancia del
+operador, es decir, de acuerdo a su prioridad, de la siguiente forma:</p>
+<ul>
+<li>Todas las expresiones entre paréntesis se evalúan primero.</li>
+<li>Las expresiones con paréntesis anidados se evalúan de adentro hacia afuera,
+el paréntesis más interno se evalúa primero.</li>
+<li>Dentro de una misma expresión los operadores se evalúan en el siguiente
+orden.
+<ol>
+<li>Exponenciación: <code>^</code></li>
+<li>Multiplicación, división, modulo: <code>*</code>, <code>/</code>, <code>%</code></li>
+<li>Suma y resta: <code>+</code>, <code>-</code></li>
+</ol></li>
+<li>Los operadores en una misma expresión con igual nivel de prioridad se
+evalúan de izquierda a derecha.</li>
+</ul>
+<h4 id="ejemplos">Ejemplos</h4>
+<pre><code>4 + 2 * 5 = 14
+4 + 10 = 14
+23 * 4 / 2 = 46
+92 / 2 = 46
+3 + 5 * (10 - (2 + 4)) = 23
+3 + 5 * (10 - 6) = 3 + 5 * 4 = 3 + 20 = 23
+3 + 5 - 14 / 2 = 1
+3 + 5 - 7 = 8 - 7 = 1
+2 * (1 + 3 * 4) = 26
+2 * (1 + 12) = 2 * 13 = 26</code></pre>
+<h3 id="operadores-relacionales">Operadores Relacionales</h3>
+<p>Los operadores relacionales se utilizan para establecer una relación entre dos
+valores. Los valores se comparan entre sí y esta comparación produce un
+resultado de certeza o falsedad (verdadero o falso).</p>
+<p>Los operadores relacionales deben comparan <strong>valores del mismo tipo</strong>
+(numéricos o cadenas), tienen el mismo nivel de prioridad en su evaluación y
+tienen menor prioridad que los operadores aritméticos.</p>
+<p>Las operaciones relacionales son las siguientes:</p>
+<ul>
+<li><code>&gt;</code> Mayor que</li>
+<li><code>&lt;</code> Menor que</li>
+<li><code>&gt;=</code> Mayor o igual que</li>
+<li><code>&lt;=</code> Menor o igual que</li>
+<li><code>!=</code> Diferente</li>
+<li><code>==</code> Igual</li>
+</ul>
+<h4 id="ejemplos-1">Ejemplos</h4>
+<p>Si <code>a = 10</code>, <code>b = 20</code> y <code>c = 30</code>.</p>
+<p><code>a + b &gt; c</code></p>
+<p>Falso</p>
+<p><code>a - b &lt; c</code></p>
+<p>Verdadero</p>
+<p><code>a - b == c</code></p>
+<p>Falso</p>
+<p><code>a * b != c</code></p>
+<p>Verdadero</p>
+<p>Ejemplos no válidos:</p>
+<p><code>a &lt; b &lt; c</code></p>
+<p><code>10 &lt; 20 &lt; 30</code></p>
+<p><code>'hola' &lt; 30</code></p>
+<h3 id="operadores-lgicos">Operadores Lógicos</h3>
+<p>Los operadores lógicos se utilizan para establecer relaciones entre <strong>valores
+lógicos</strong>. Estos valores pueden ser resultado de una expresión relacional.</p>
+<p>Las operaciones lógicas son las siguientes:</p>
+<ul>
+<li>Conjunción: <strong>AND</strong>, <code>&amp;</code></li>
+<li>Disyunción: <strong>OR</strong>, <code>|</code></li>
+<li>Negación: <strong>NOT</strong>, <code>!</code></li>
+</ul>
+<p>A continuación se muestran las tablas de verdad para las operaciones lógicas.</p>
+<table>
+<thead>
+<tr>
+<th>Operando 1</th>
+<th>Operador</th>
+<th>Operando 2</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>V</code></td>
+<td><code>AND</code></td>
+<td><code>V</code></td>
+<td><code>V</code></td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td><code>AND</code></td>
+<td><code>V</code></td>
+<td><code>F</code></td>
+</tr>
+<tr>
+<td><code>V</code></td>
+<td><code>AND</code></td>
+<td><code>F</code></td>
+<td><code>F</code></td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td><code>AND</code></td>
+<td><code>F</code></td>
+<td><code>F</code></td>
+</tr>
+<tr>
+<td>----------</td>
+<td>--------</td>
+<td>----------</td>
+<td>---------</td>
+</tr>
+<tr>
+<td><code>V</code></td>
+<td><code>OR</code></td>
+<td><code>V</code></td>
+<td><code>V</code></td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td><code>OR</code></td>
+<td><code>V</code></td>
+<td><code>V</code></td>
+</tr>
+<tr>
+<td><code>V</code></td>
+<td><code>OR</code></td>
+<td><code>F</code></td>
+<td><code>V</code></td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td><code>OR</code></td>
+<td><code>F</code></td>
+<td><code>F</code></td>
+</tr>
+<tr>
+<td>----------</td>
+<td>--------</td>
+<td>----------</td>
+<td>---------</td>
+</tr>
+<tr>
+<td></td>
+<td><code>NOT</code></td>
+<td><code>V</code></td>
+<td><code>F</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>NOT</code></td>
+<td><code>F</code></td>
+<td><code>V</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplos: Sea <code>a = 10</code>, <code>b = 20</code> y <code>c = 30</code>.</p>
+<pre><code> a &lt; b  &amp; b  &lt; c
+10 &lt; 20 &amp; 20 &lt; 30
+   V    &amp;    V
+       V</code></pre>
+<h4 id="prioridad-de-los-operadores-lgicos">Prioridad de los Operadores Lógicos</h4>
+<p>Los operadores relacionales se evalúan en el siguiente orden.</p>
+<ul>
+<li>Not <code>!</code></li>
+<li>And <code>&amp;</code></li>
+<li>OR <code>|</code></li>
+</ul>
+<h4 id="prioridad-de-los-operadores-en-general">Prioridad de los Operadores en General</h4>
+<p>A continuación se hace un resumen de la prioridad de los operadores aritméticos,
+relacionales y lógicos.</p>
+<ol>
+<li>
+<p><code>()</code></p>
+</li>
+<li>
+<p><code>^</code></p>
+</li>
+<li>
+<p><code>*</code>, <code>/</code>, <code>%</code>, <code>!</code></p>
+</li>
+<li>
+<p><code>+</code>, <code>-</code>, <code>&amp;</code></p>
+</li>
+<li><code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>!=</code>, <code>==</code>, <code>|</code></li>
+</ol>
+<p>Ejemplos:</p>
+<p>Sean <code>a = 10</code>, <code>b = 12</code>, <code>c = 13</code>, y <code>d = 10</code>.</p>
+<pre><code>((a  &gt; b)  | (a &lt; c))   &amp; ((a == c)   | (a &gt;= b))
+((10 &gt; 12) | (10 &lt; 13)) &amp; ((10 == 13) | (10 &gt;= 12))
+(    F     |      V   ) &amp; (     F     |     F     ) 
+           V            &amp;             F
+                        F</code></pre>
+<pre><code>((a  &gt;= b)  | (a &lt; d))   &amp; ((a &gt;= d)   &amp; (c  &gt; d ))
+((10 &gt;= 12) | (10 &lt; 10)) &amp; ((10 &gt;= 10) &amp; (13 &gt; 10))
+(    F      |     F    ) &amp; (    V      &amp;     V    )
+            F            &amp;             V
+                         F</code></pre>
+<pre><code>!(a == c)   &amp; (c  &gt; b)
+!(10 == 13) &amp; (13 &gt; 12)
+     !F     &amp;     V
+     V      &amp;     V
+            V</code></pre>
+<h3 id="ejercicios-propuestos">Ejercicios propuestos</h3>
+<ol>
+<li>¿Que es una expresión y cuál es su clasificación?</li>
+<li>Realice las siguientes operaciones aritméticas:
+<pre><code>2 + 9 * 3 - 100 / 5
+((6 * 10 - 45 + 80) / 10) / (((12 + 3) * 5 -45) / 9)
+(((2^10 - 1000) + 76) / (120 - 90 + (25 * 4 / 20))) / 5 + 10
+(20 - 40 + (25 / 5 * 20) / (2 * 10 - 1000 / 50) + 40) / ((6 + 10) / (20 * 10 / 50 * 2))</code></pre></li>
+<li>Realice las siguientes operaciones relacionales, con <code>a = 10</code>, <code>b = 5</code> y
+<code>c = 20</code>:
+<pre><code>(2 * a / 2 * b) / (a - 5 * a * b + c) &gt; (a + 2 * b + c) - (b + c * 8)
+(2 * a - 5 * b) / (4 * c - 5 * a * b + 10) &lt;= (a * b * c) / (a + b + c)
+(10 * a + 5 + b) / (c - 5 * a * b + 10) != (a + b * c) - (a * b + c) / (5 * a)
+10 / (a + b + c) + 3 * a * b * c == 10 * c - 2 * a * b + 6</code></pre></li>
+<li>Realice las siguientes operaciones lógicas, con <code>a = 1</code>, <code>b = 2</code> y <code>c = 4</code>:
+<pre><code>(2 * a) / (5 * b + 10) &gt; 3 * a + c &amp;&amp; 3 * a * b * c &gt;= 200
+a / (5 * b) &lt;= 3 * a + c || a * b * c &gt;= 200 &amp;&amp; !(a + b * c &gt;= 350 * c)
+a / (b + c) != 10 * b + a || a + 5 * b * a &gt;= 5 * b / 2 &amp;&amp; !(a + b != 2 * c)
+(2 + a) / (5 * b + c) &gt;= 3 + 2 * a &amp;&amp; !(5 + 2 * c &lt; 3 * a) &amp;&amp; !(3 + a &lt;= 5 * b + c)</code></pre></li>
+</ol>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <p class="text-muted">
+            website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+<script>
+    $(function() {
+        $("section>h1").wrap('<div class="page-header" />');
+        // Syntax highlighting
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

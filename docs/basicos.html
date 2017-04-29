@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lógica de programación</title>
+
+    <link rel="icon" type="image/png" href="http://www.montealegreluis.com/logica-programacion/favicon.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/highlight.dark.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/main.css">
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+
+    <a class="navbar-brand" href="http://www.montealegreluis.com/logica-programacion/">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Lógica de programación
+        <small class="hidden-xs hidden-sm">
+            
+        </small>
+    </a>
+
+            <a href="https://github.com/MontealegreLuis/logica-programacion">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
+</header>
+
+
+<main class="container-fluid">
+
+    
+        <nav id="sidebar" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                    <li class="active">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/basicos.html">
+                            Conceptos básicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/entidades-primitivas.html">
+                            Entidades primitivas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/expresiones.html">
+                            Expresiones
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguajes-algoritmicos.html">
+                            Lenguajes algorítmicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/programacion-estructurada.html">
+                            Programación estructurada
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-secuenciales.html">
+                            Estructuras secuenciales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-condicionales.html">
+                            Estructuras condicionales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-ciclicas.html">
+                            Estructuras cíclicas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/arreglos.html">
+                            Arreglos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/subprogramas.html">
+                            Subprogramas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguaje-c.html">
+                            Lenguaje C
+                        </a>
+                    </li>
+                            </ul>
+
+        </nav>
+
+    
+    <div class="row">
+
+        <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+            <h1 id="conceptos-bsicos-y-metodologa">Conceptos Básicos y Metodología</h1>
+<p>En este capítulo aprenderás los conceptos básicos necesarios para escribir tus
+primeros programas:</p>
+<ul>
+<li>Flujo de datos en una Computadora</li>
+<li>Programa</li>
+<li>Algoritmo</li>
+<li>Lenguaje de programación</li>
+<li>Metodología para crear programas.</li>
+</ul>
+<h2 id="cmo-opera-una-computadora">¿Cómo opera una computadora?</h2>
+<p>Con la computadora puedes realizar tareas sin que tengas la noción exacta de
+las operaciones que ejecuta.</p>
+<p>Sin embargo, con la computadora también puedes diseñar <strong>soluciones</strong> para
+<strong>problemas específicos</strong>, sobre todo si estos problemas involucran
+operaciones <strong>complejas</strong> o <strong>repetitivas</strong>, o manejan un <strong>volumen muy
+grande de datos</strong>.</p>
+<p>Una computadora <strong>no tiene inteligencia por sí sola</strong>. La computadora <strong>no
+puede</strong> hacer tarea alguna que no haya sido definida previamente por una
+persona.</p>
+<dl>
+<dt>Computadora</dt>
+<dd><p>Es un dispositivo electrónico usado para procesar información y obtener
+resultados. A los datos que recibe la computadora, se les llama
+<strong>entradas</strong>, estos datos se <strong>procesan</strong> para producir una <strong>salida</strong>.</p>
+<p><img src="images/flujo-informacion.png" alt="Flujo de información" /></p></dd>
+</dl>
+<h2 id="qu-es-un-programa">¿Qué es un programa?</h2>
+<blockquote>
+<p>Un programa es una serie de operaciones ejecutadas por una computadora sobre
+un grupo específico de datos para llegar a un resultado.</p>
+</blockquote>
+<p>A esta serie de operaciones que contiene un programa es a lo que llamamos
+<strong>algoritmo</strong>.</p>
+<h2 id="qu-es-un-algoritmo">¿Qué es un algoritmo?</h2>
+<blockquote>
+<p>Un algoritmo es una serie de pasos organizados que describen el proceso que se
+debe seguir para dar solución a un problema específico.</p>
+</blockquote>
+<p>Los algoritmos se clasifican en:</p>
+<ul>
+<li>
+<p><strong>Algoritmos cualitativos</strong>. Son aquellos en los que se describen los pasos
+utilizando palabras.</p>
+</li>
+<li><strong>Algoritmos cuantitativos</strong>. Son aquellos en los que se utilizan cálculos
+numéricos para definir los pasos del proceso.</li>
+</ul>
+<p>Supon, por ejemplo, que deseas escribir un algoritmo para sumar dos números. Si
+usas un algoritmo cualitativo, sólo <strong>palabras</strong>, los pasos son similares a
+los siguientes:</p>
+<ol>
+<li>Preguntar cuales son esos dos números.</li>
+<li>Sumar los dos números obtenidos en el paso 1.</li>
+<li>Comunicar el resultado obtenido en el paso 2.</li>
+</ol>
+<p>Por otro lado, si usas un algoritmo cualitativo tendrías que usar <strong>fórmulas</strong>
+como las siguientes:</p>
+<ol>
+<li>Sean <code>A</code> y <code>B</code> dos variables con los valores que queremos sumar.</li>
+<li>Sea <code>C = A + B</code>.</li>
+<li>El resultado de la suma es <code>C</code>.</li>
+</ol>
+<h2 id="lenguajes-algortmicos">Lenguajes Algorítmicos</h2>
+<p>Un lenguaje algorítmico es una serie de símbolos y reglas que se utilizan para
+describir de manera explícita un proceso. Los lenguajes algorítmicos se
+clasifican en dos tipos:</p>
+<ul>
+<li>
+<p><strong>Lenguajes gráficos</strong>. Este tipo de lenguajes representan gráficamente las
+operaciones que realiza un algoritmo (diagrama de flujo).</p>
+</li>
+<li><strong>Lenguajes no gráficos</strong>. Estos lenguajes expresan en forma descriptiva las
+operaciones que debe realizar un algoritmo (pseudocódigo).</li>
+</ul>
+<p>Ambos lenguajes se analizan a detalle en el Capítulo
+<a href="docs/lenguajes-algorítmicos.html">3</a>.</p>
+<h2 id="lenguaje-de-programacin">Lenguaje de programación</h2>
+<p>Los algoritmos no pueden ser interpretados por una computadora directamente,
+así que debemos <strong>traducirlos</strong> a un lenguaje que la computadora pueda
+entender. Ese es el objetivo de un lenguaje de programación.</p>
+<p>Un lenguaje de programación es el conjunto de símbolos, caracteres y reglas
+que le permiten a las personas <strong>comunicarse</strong> con la computadora. Los
+lenguajes de programación tienen un conjunto de instrucciones que permiten
+realizar operaciones de:</p>
+<ul>
+<li><strong>entrada/salida</strong>,</li>
+<li><strong>aritméticas</strong>,</li>
+<li>de <strong>manipulación de texto</strong>,</li>
+<li><strong>lógica</strong> y <strong>comparación</strong> y</li>
+<li><strong>almacenamiento</strong> y <strong>recuperación</strong> de datos.</li>
+</ul>
+<h2 id="metodologa-para-la-creacin-de-programas">Metodología para la creación de programas.</h2>
+<p>Una metodología define una manera sistemática de hacer algo. En nuestro caso,
+describe los pasos a seguir al crear programas.</p>
+<h3 id="1-definicin-del-problema">1) Definición del Problema</h3>
+<p>El primer paso consiste en comprender de qué trata el problema y
+<strong>especificarlo</strong> lo más formalmente posible con el propósito de eliminar la
+<strong>ambigüedad</strong>, la <strong>inconsistencia</strong> y la <strong>incompletitud</strong>, con miras a
+obtener una descripcion <strong>clara</strong>, <strong>precisa</strong> y <strong>concisa</strong> del problema
+que vamos a resolver.</p>
+<ul>
+<li>
+<p><strong>Ejemplo de ambigüedad</strong>. La frase &quot;Mira al hombre en el patio con un
+telescopio&quot; se presta a ambigüedad. ¿Utilizamos un telescopio para mirar al
+hombre en el patio o el hombre que miramos tiene un telescopio?</p>
+</li>
+<li>
+<p><strong>Ejemplo de inconsistencia</strong>. En ocasiones, el enunciado que describe el
+problema que se quiere resolver puede incurrir en contradicciones. Piensa
+por ejemplo en las reglas de un procesador de palabras:</p>
+<ul>
+<li>Todas las líneas de texto tienen la misma longitud indicada por el
+usuario.</li>
+<li>Un cambio de línea debe ocurrir solo después de una palabra, a menos que
+el usuario pida explícitamente la división por sílabas.</li>
+</ul>
+<p>La inconsistencia resulta al preguntarse ¿Qué pasa cuando la palabra es más
+larga que la línea? Si el usuario no pide explícitamente la división por
+sílabas, esta línea tendrá mayor longitud.</p>
+</li>
+<li><strong>Ejemplo de incompletitud</strong> Por incompletitud se entiende que en el
+enunciado no todos los casos o conceptos están bien definidos. En un manual
+de un procesador de palabras se encuentra la frase &quot;Seleccionar es el
+proceso de designar las áreas de su documento sobre las cuales desea
+trabajar&quot; ¿qué significa designar? ¿Qué significa área? ¿Cómo deben ser las
+áreas? ¿Es una sola área?</li>
+</ul>
+<p>En otras palabras, la definición del problema consiste en encontrar una
+representación del problema donde todo esté claro, ya sea mediante gráficos, o
+utilizando otro lenguaje distinto al natural (por ejemplo las matemáticas).</p>
+<p>Un problema no estará del todo comprendido si no se ha encontrado una
+representación en la cual todos los elementos que intervienen sean representados
+sin redundancia, sin ambigüedad y sin inconsistencias.</p>
+<h3 id="2-anlisis-del-problema">2) Análisis del Problema</h3>
+<p>Una vez que haz comprendido lo que deseas que la computadora haga, necesitas
+definir:</p>
+<ul>
+<li>Los datos de entrada.</li>
+<li>Cuál es la información que se desea producir (salida).</li>
+<li>Los métodos y fórmulas que se necesitan para procesar los datos.</li>
+</ul>
+<p>Una recomendación muy práctica consiste en ponerte en el lugar de la computadora
+y analizar qué es lo que es necesario que le ordenes y en que secuencia, para
+producir los resultados esperados.</p>
+<h3 id="3-diseo-del-algoritmo">3) Diseño del Algoritmo</h3>
+<p>Las características de un buen algoritmo son:</p>
+<ul>
+<li>Debe tener un punto particular de inicio.</li>
+<li>No debe permitir dobles interpretaciones.</li>
+<li>Debe ser general, es decir, debe soportar la mayoría de las variantes que se
+puedan presentar en la definición del problema.</li>
+<li>Debe ser finito en tamaño y tiempo de ejecución.</li>
+</ul>
+<h3 id="4-codificacin">4) Codificación</h3>
+<p>La codificación es la operación de escribir la solución del problema
+(algoritmo), en una forma reconocible por la computadora (lenguaje de
+programación), a la cual se le conoce como <strong>código fuente</strong>.</p>
+<h3 id="5-prueba-y-depuracin">5) Prueba y Depuración</h3>
+<p>Los errores humanos dentro de la programación de computadoras son muchos y
+aumentan considerablemente con la complejidad del problema. Al proceso de
+<strong>identificar y eliminar errores</strong> se le llama depuración.</p>
+<h2 id="ejercicios-propuestos">Ejercicios Propuestos</h2>
+<ol>
+<li>Explica el flujo de trabajo de una computadora.</li>
+<li>¿Qué es un programa?</li>
+<li>¿Qué es un lenguaje de programación?</li>
+<li>¿Qué es un algoritmo y cuál es su clasificación?</li>
+<li>¿Qué son los lenguajes algorítmicos y cómo se clasifican?</li>
+<li>Describe de manera cualitativa y cuantitativa un algoritmo que calcule el
+promedio de 3 números.</li>
+<li>¿Cuáles son los 5 pasos de la metodología descrita en este Capítulo?</li>
+<li>Dé un ejemplo de ambigüedad, otro de inconsistencia y uno más de incompletitud.</li>
+</ol>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <p class="text-muted">
+            website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+<script>
+    $(function() {
+        $("section>h1").wrap('<div class="page-header" />');
+        // Syntax highlighting
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

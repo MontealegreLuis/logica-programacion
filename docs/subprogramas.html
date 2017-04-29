@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lógica de programación</title>
+
+    <link rel="icon" type="image/png" href="http://www.montealegreluis.com/logica-programacion/favicon.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/highlight.dark.css">
+    <link rel="stylesheet" href="http://www.montealegreluis.com/logica-programacion/css/main.css">
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top">
+
+    <a class="navbar-brand" href="http://www.montealegreluis.com/logica-programacion/">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Lógica de programación
+        <small class="hidden-xs hidden-sm">
+            
+        </small>
+    </a>
+
+            <a href="https://github.com/MontealegreLuis/logica-programacion">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
+</header>
+
+
+<main class="container-fluid">
+
+    
+        <nav id="sidebar" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/basicos.html">
+                            Conceptos básicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/entidades-primitivas.html">
+                            Entidades primitivas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/expresiones.html">
+                            Expresiones
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguajes-algoritmicos.html">
+                            Lenguajes algorítmicos
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/programacion-estructurada.html">
+                            Programación estructurada
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-secuenciales.html">
+                            Estructuras secuenciales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-condicionales.html">
+                            Estructuras condicionales
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/estructuras-ciclicas.html">
+                            Estructuras cíclicas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/arreglos.html">
+                            Arreglos
+                        </a>
+                    </li>
+                                    <li class="active">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/subprogramas.html">
+                            Subprogramas
+                        </a>
+                    </li>
+                                    <li class="">
+                        <a href="http://www.montealegreluis.com/logica-programacion/docs/lenguaje-c.html">
+                            Lenguaje C
+                        </a>
+                    </li>
+                            </ul>
+
+        </nav>
+
+    
+    <div class="row">
+
+        <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+            <h1 id="subprogramas">Subprogramas</h1>
+<p>En este capítulo aprenderás a usar los dos tipos de módulos mas comunes:</p>
+<ul>
+<li>las <strong>funciones</strong> y los</li>
+<li><strong>procedimientos</strong>.</li>
+</ul>
+<h2 id="definicin-y-manipulacin">Definición y Manipulación</h2>
+<p>Un problema complejo se puede dividir en pequeños subproblemas más sencillos.
+Estos subproblemas se conocen como <strong>módulos</strong> y a su implementación en un
+lenguaje de programación se le llama <strong>subprograma</strong>.</p>
+<p>Un subprograma puedes inluir cualquier estructura de control del mismo modo que
+haces en un programa.</p>
+<p>El programa <strong>llama</strong> o <strong>invoca</strong> al subprograma, este ejecuta una tarea
+específica y devuelve el &quot;control&quot; al programa que lo llamó.</p>
+<p>Cuando un programa <strong>no devuelve</strong> un resultado se le llama procedimiento,
+cuando <strong>devuelve</strong> un valor se le llama función.</p>
+<p><img src="images/modulos.png" alt="Módulos" /></p>
+<h3 id="funciones">Funciones</h3>
+<p>Una función es una operación que toma uno o más valores (argumentos) y devuelve
+un resultado (valor de la función para los argumentos dados). Por ejemplo:</p>
+<p><code>f(x) = x / (1+ x<sup>2</sup>)</code></p>
+<p>Donde: <code>f</code> es el nombre de la función, <code>x</code> es el argumento (también conocido
+como parámetro formal)</p>
+<p>La definición de una función se presenta de la siguiente manera:</p>
+<pre><code>tipoValor nombreFuncion (p1, p2, ..., pn)
+Inicio
+   Bloque de instrucciones
+   Retorna valor
+Fin</code></pre>
+<p>Donde: <code>tipoValor</code> indica el tipo de valor que devolverá la función.
+<code>nombreFuncion</code> es el identificador con el cual se reconoce a la función en el
+cuerpo del programa principal. <code>p1, p2, … , pn</code> es el grupo de parámetros que
+define a la función. Y <code>valor</code> es el valor que devuelve la función.</p>
+<p>Cuando definimos una función solo le indicamos al algoritmo que esta función
+existe, pero <strong>una definición de función no implica la ejecución</strong> de las
+instrucciones que la constituyen. Para hacer uso de una función, el algoritmo
+principal la debe llamar. Por ejemplo:</p>
+<pre><code>real valorAbsoluto(real numero)
+Inicio
+    Si numero &lt; 0 entonces
+    Inicio Si
+        Retorna numero * -1;
+    Fin Si
+    Retorna numero
+Fin
+Inicio
+   Imprimir "Ingresa un numero"
+   Leer numero
+   absoluto = valorAbsoluto(numero)
+   Imprimir "El valor absoluto de ", numero, " es:", absoluto
+Fin</code></pre>
+<p>En el caso de los procedimientos, que por definición, no devuelven un valor, el
+valor que se usa para <code>tipoValor</code> es <code>vacio</code>. Por ejemplo, la funcion
+<code>mostrarValorAbsoluto</code> en el siguiente programa.</p>
+<pre><code>vacio mostrarValorAbsoluto(real numero, real absoluto)
+Inicio
+    Imprimir "El valor absoluto de ", numero, " es:", absoluto
+Fin
+Inicio
+   Imprimir "Ingresa un numero"
+   Leer numero
+   absoluto = valorAbsoluto(numero)
+   mostrarValorAbsoluto(numero, absoluto)
+Fin</code></pre>
+<h3 id="problemas-propuestos">Problemas Propuestos</h3>
+<ol>
+<li>
+<p>Diseñe un algoritmo que llene una matriz de <code>10 x 10</code> y determine:</p>
+<ul>
+<li>El número mayor almacenado en la matriz</li>
+<li>El número mayor almacenado en cada renglón</li>
+<li>La columna que tuvo la máxima suma</li>
+<li>El renglón que tuvo la máxima suma</li>
+</ul>
+<p>Diseña una función para cada inciso.</p>
+</li>
+<li>Diseñe un algoritmo que lea un numero y mediante una función regrese el
+valor de 1 si el numero es positivo y -1 si es negativo.</li>
+</ol>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <p class="text-muted">
+            website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+<script>
+    $(function() {
+        $("section>h1").wrap('<div class="page-header" />');
+        // Syntax highlighting
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>
